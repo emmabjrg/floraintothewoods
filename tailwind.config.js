@@ -7,3 +7,19 @@ export default {
   plugins: [],
 }
 
+module.exports = {
+  content: [
+    "./src/**/*.{astro,html,js}", 
+    "./pages/**/*.{astro,html,js}", 
+  ],
+  theme: {
+    extend: {
+      fontFamily: {
+        cormorant: ['"Cormorant Garamond"', 'serif'],
+      },
+    },
+  },
+  plugins: [],
+}
+
+

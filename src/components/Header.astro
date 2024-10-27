@@ -3,13 +3,21 @@
 ---
 
 <div>
-  <nav id="desktopmenu" class="">
-    <ul class="justify-end">
-      <li class=""><a href="">Om kunstneren</a></li>
+  <link
+    href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+    rel="stylesheet"
+  />
+  <nav id="desktopmenu" class="mr-auto flex flex-col items-end">
+    <ul class="flex space-x-8">
+      <li class="">
+        <a href="">Om kunstneren</a>
+      </li>
       <li class=""><a href="">Om værkerne</a></li>
       <li class=""><a href="">Anmeldelser</a></li>
       <li class="">(ENG / DK)</li>
-      <li class="">
+    </ul>
+    <ul>
+      <li class="ml-8 mt-2">
         <button id="playPauseButton">Music</button>
 
         <audio id="backgroundMusic" autoplay loop>
@@ -33,20 +41,20 @@
       }
     });
   </script>
+
+  <style>
+    #playPauseButton {
+      background: none;
+      border: none;
+      color: #000;
+      font-size: 16px;
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    #playPauseButton.muted {
+      text-decoration: line-through;
+      color: #888;
+    }
+  </style>
 </div>
-
-<style>
-  #playPauseButton {
-    background: none;
-    border: none;
-    color: #000;
-    font-size: 16px;
-    cursor: pointer;
-    text-decoration: none;
-  }
-
-  #playPauseButton.muted {
-    text-decoration: line-through;
-    color: #888;
-  }
-</style>
