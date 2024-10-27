@@ -1,7 +1,5 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
-import Button from "../components/Button.astro";
-import Link from "../components/Link.astro";
 import "../styles/tailwind.css";
 ---
 
@@ -11,9 +9,140 @@ import "../styles/tailwind.css";
     rel="stylesheet"
   />
 
-  <article class="text-center pt-20">
-    <h1 class="font-cormorant italic text-9xl pt-10">Flora Yukhnovich</h1>
-    <h2 class="font-manrope text-4xl pt-2">Into the Woods</h2>
-    <p></p>
-  </article>
+  <div id="scroll-container" class="flex overflow-x-auto h-screen">
+    <div
+      class="flex flex-col items-center justify-center w-screen h-screen p-80"
+    >
+      <h1 class="font-cormorant italic text-9xl whitespace-nowrap">
+        Flora Yukhnovich
+      </h1>
+      <h2 class="font-manrope text-5xl">Into the Woods</h2>
+    </div>
+
+    <section class="flex-shrink-0 w-screen h-screen p-96 flex items-center">
+      <div class="w-1/2 p-4">
+        <img src="" alt="kunst her" class="w-full h-auto rounded-lg" />
+      </div>
+      <div class="w-1/2 p-4 flex flex-col justify-center">
+        <h1 class="font-manrope text-sm">Seksjon 1</h1>
+        <p class="mt-4">
+          Flora Yukhnovich (b. 1990) is a British artist celebrated for her
+          distinctive fusion of figuration and abstraction, with Rococo as a
+          central influence. After transitioning from a background in graphic
+          design to painting, she completed an MA at City & Guilds of London Art
+          School. Her work explores themes of femininity and materiality,
+          blending elements of high and low culture. Yukhnovich’s paintings are
+          known for their sensuous and fluid compositions, where she
+          reinterprets historical artistic styles through a contemporary lens.
+        </p>
+      </div>
+    </section>
+
+    <section class="flex-shrink-0 w-screen h-screen p-1 flex items-center">
+      <div class="w-1/2 p-4">
+        <img src="" alt="blomst her" class="w-full h-auto rounded-lg" />
+      </div>
+    </section>
+
+    <section
+      class="flex-shrink-0 w-screen h-screen p-9 flex flex-col justify-center items-center"
+    >
+      <h1 class="font-manrope text-sm">Seksjon 2</h1>
+      <p class="text-2xl">
+        With Into the Woods, Ordrupgaard proudly presents Flora Yukhnovich in
+        her first museum exhibition outside the UK. Known for her rising
+        prominence in the art world, Yukhnovich brings together Rococo-inspired
+        aesthetics and a modern sensibility that blurs the boundaries between
+        fine art and popular culture. The exhibition invites visitors into a
+        fantastical, enchanted forest where the conscious and unconscious meet.
+        Here, historical and contemporary references intertwine—from classical
+        figures like Venus to modern icons such as Nicki Minaj—with the female
+        body serving as a central theme. Through her evocative visual language,
+        Yukhnovich transcends traditional genre boundaries, offering an
+        immersive and thought-provoking experience.
+      </p>
+    </section>
+
+    <section class="flex-shrink-0 w-screen h-screen p-1 flex items-center">
+      <div class="w-1/2 p-4">
+        <img src="" alt="kunst her" class="w-full h-auto rounded-lg" />
+      </div>
+    </section>
+
+    <section class="flex-shrink-0 flex flex-col justify-center items-center">
+      <h1 class="font-manrope text-sm">Seksjon 3</h1>
+      <p class="text-6xl">
+        "I think of nature as something both accidental and deliberate in the
+        painting process.
+      </p>
+    </section>
+
+    <section class="flex-shrink-0 w-screen h-screen p-96 flex items-center">
+      <div class="w-1/2 p-4">
+        <img src="" alt="kunst her" class="w-full h-auto rounded-lg" />
+      </div>
+      <div class="w-1/2 p-4 flex flex-col justify-center">
+        <h1 class="font-manrope text-sm">Seksjon 4</h1>
+        <p class="mt-4">
+          The work Minuet is based on a painting by the Italian Rococo painter
+          Giovanni Domenico Tiepolo. The painting, which hangs in the Louvre in
+          Paris, depicts a dancing couple surrounded by masked spectators. The
+          title, Minuet, refers specifically to a special, elegant dance for
+          couples that dominated the aristocratic ballrooms of Europe from ca.
+          1650–1750.
+        </p>
+        <p class="pt-2">
+          In the work, Yukhnovich has also incorporated figures from the French
+          Rococo painter Antoine Watteau’s depictions of commedia dell’arte.
+          Commedia dell’arte is an Italian theatre form that originated in the
+          16th century and is characterised by improvisation, comedic characters
+          and masked figures such as Harlequin, Pierrot and Columbine.
+        </p>
+      </div>
+    </section>
+
+    <section class="flex-shrink-0 flex items-center">
+      <div class="transform rotate-90">
+        <blockquote class="text-xl whitespace-nowrap">
+          “The rococo has really become a vehicle for me to reflect on my
+          experience of being a woman.”
+        </blockquote>
+      </div>
+    </section>
+
+    <section
+      class="flex-shrink-0 w-screen h-screen p-96 flex flex-col justify-center items-center"
+    >
+      <h1 class="font-manrope text-5xl">Seksjon 6</h1>
+      <p></p>
+    </section>
+
+    <section
+      class="flex-shrink-0 w-screen h-screen p-96 flex flex-col justify-center items-center"
+    >
+      <h1 class="font-manrope text-5xl">Seksjon 7</h1>
+      <p></p>
+    </section>
+
+    <section
+      class="flex-shrink-0 w-screen h-screen p-96 flex flex-col justify-center items-center"
+    >
+      <h1 class="font-manrope text-5xl">Seksjon 7</h1>
+      <p></p>
+    </section>
+  </div>
+
+  <script>
+    const scrollContainer = document.getElementById("scroll-container");
+
+    window.addEventListener(
+      "wheel",
+      (event) => {
+        scrollContainer.scrollLeft += event.deltaY;
+
+        event.preventDefault();
+      },
+      { passive: false }
+    );
+  </script>
 </MainLayout>
