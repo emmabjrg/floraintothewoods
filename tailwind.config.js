@@ -26,6 +26,7 @@ module.exports = {
       letterSpacing: {
         'extra-tight': '-0.10em',
       },
+      
     },
   },
   plugins: [],
