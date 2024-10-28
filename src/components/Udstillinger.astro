@@ -6,36 +6,190 @@
   <div class="font-manrope text-5xl transform -rotate-90">
     <banner>Tidligere</banner>
   </div>
-  <div>
-    <ul class="">
-      <li class="p-5">
-        <a href="">AI WEIWEI – WATER LILIES #1</a>
-        <p class="underline">31. maj 2024 – 19. januar 2025</p>
-      </li>
-      <li class="p-5">
-        <a href="">RUNE BOSSE - BAGVED OVERFLADEN</a>
-        <p class="underline">6. april – 3. november 2024</p>
-      </li>
-      <li class="p-5">
-        <a href="">IMPRESSIONISMEN OG DENS OVERSETE KVINDER</a>
-        <p class="underline">9. februar – 20. maj 2024</p>
-      </li>
-      <li class="p-5">
-        <a href=""> STRONG VERONICA HODGES – UNDER TRÆET STRONG</a>
-        <p class="underline">19. april – 1. november 2023</p>
-      </li>
-      <li class="p-5">
-        <a href="">UNDERFUNDIGE UNDERVERDENER. GAUGUIN OG LILJA</a>
-        <p class="underline">24. marts - 25. juni 2023</p>
-      </li>
-      <li class="p-5">
-        <a href="">JESPER CHRISTIANSEN</a>
-        <p class="underline">1. februar - 3. september 2023</p>
-      </li>
-      <li class="p-5">
-        <a href="">SAMLINGERNE</a>
-        <p class="underline">Fast udstilling</p>
-      </li>
-    </ul>
+
+  <div class="mx-auto">
+    <!-- Grid container for links and image display -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-1 m-20">
+      <!-- Project Links Column -->
+      <div>
+        <ul class="space-y-4 text-3xl">
+          <li>
+            <a
+              href="#"
+              class="text-l font-thin hover:text-yellow-600 project-link whitespace-nowrap"
+              data-project="project1">AI WEIWEI – WATER LILIES</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="text-l font-thin hover:text-gray-500 project-link whitespace-nowrap"
+              data-project="project2">RUNE BOSSE - BAGVED OVERFLADEN</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="text-l font-thin hover:text-pink-400 project-link whitespace-nowrap"
+              data-project="project3"
+              >IMPRESSIONISMEN OG DENS OVERSETE KVINDER</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="text-l font-thin project-link whitespace-nowrap"
+              data-project="project3"
+              >STRONG VERONICA HODGES – UNDER TRÆET STRONG</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="text-l font-thin hover:text-pink-400 project-link whitespace-nowrap"
+              data-project="project3"
+              >UNDERFUNDIGE UNDERVERDENER. GAUGUIN OG LILJA</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="text-l font-thin hover:text-pink-400 project-link"
+              data-project="project3">ESPER CHRISTIANSEN</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="text-l font-thin hover:text-pink-400 project-link"
+              data-project="project3">SAMLINGERNE</a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <!-- Image Display Column -->
+      <div class="relative h-64 w-full">
+        <div class="carousel hidden">
+          <!-- Gjør karusellen usynlig i utgangspunktet -->
+          <img
+            src="molle.png"
+            alt="Project 1"
+            class="carousel-image"
+            data-project="project1"
+          />
+          <img
+            src="kunst1.png"
+            alt="Project 2"
+            class="carousel-image"
+            data-project="project2"
+          />
+          <img
+            src="girl.png"
+            alt="Project 3"
+            class="carousel-image"
+            data-project="project3"
+          />
+          <img
+            src="girl.png"
+            alt="Project 3"
+            class="carousel-image"
+            data-project="project3"
+          />
+          <img
+            src="girl.png"
+            alt="Project 3"
+            class="carousel-image"
+            data-project="project3"
+          />
+          <img
+            src="girl.png"
+            alt="Project 3"
+            class="carousel-image"
+            data-project="project3"
+          />
+          <img
+            src="girl.png"
+            alt="Project 3"
+            class="carousel-image"
+            data-project="project3"
+          />
+        </div>
+      </div>
+    </div>
   </div>
+
+  <style>
+    .carousel {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      display: none; /* Start med å skjule karusellen */
+    }
+
+    .carousel-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: opacity 0.5s ease;
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0; /* Start med usynlige bilder */
+    }
+
+    .carousel-image.visible {
+      opacity: 1; /* Gjør bildet synlig */
+    }
+
+    .hidden {
+      display: none; /* Skjuler bildene som ikke er synlige */
+    }
+
+    .carousel.visible {
+      display: block; /* Vis karusellen når det er nødvendig */
+    }
+  </style>
+
+  <script>
+    const links = document.querySelectorAll(".project-link");
+    const images = document.querySelectorAll(".carousel-image");
+    const carouselContainer = document.querySelector(".carousel");
+
+    links.forEach((link) => {
+      link.addEventListener("mouseenter", function () {
+        const targetProject = this.getAttribute("data-project");
+
+        // Vis karusellen
+        carouselContainer.classList.add("visible");
+
+        // Skjul alle bilder
+        images.forEach((image) => {
+          image.classList.remove("visible");
+          image.classList.add("hidden");
+        });
+
+        // Vis bildet for det valgte prosjektet
+        const targetImage = document.querySelector(
+          `.carousel-image[data-project="${targetProject}"]`
+        );
+        targetImage.classList.remove("hidden");
+        targetImage.classList.add("visible");
+      });
+
+      link.addEventListener("mouseleave", function () {
+        // Skjul bildet når musen forlater linken
+        const targetProject = this.getAttribute("data-project");
+        const targetImage = document.querySelector(
+          `.carousel-image[data-project="${targetProject}"]`
+        );
+        targetImage.classList.remove("visible");
+        targetImage.classList.add("hidden");
+
+        // Skjul karusellen når ingen linker er hoveret
+        carouselContainer.classList.remove("visible");
+      });
+    });
+  </script>
 </div>
