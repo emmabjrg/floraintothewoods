@@ -19,6 +19,7 @@ const { title } = Astro.props;
 
     <title>{Astro.props.title}</title>
   </head>
+
   <body class="">
     <header class="">
       <Header />
@@ -31,5 +32,12 @@ const { title } = Astro.props;
     <footer>
       <Footer />
     </footer>
+    <script>
+      const password = prompt("Enter the password to access this site:");
+      if (password !== "1234") {
+        alert("Incorrect password!");
+        window.location.href = "https://www.isitfridayyet.net/";
+      }
+    </script>
   </body>
 </html>
