@@ -15,7 +15,16 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        cormorant: ['"Cormorant Garamond"', 'serif'],
+        manrope: ['Manrope', 'sans-serif'],
+        cormorant: ['Cormorant', 'serif'],
+      },
+      fontWeight: {
+        light: 300,
+        normal: 400,
+        bold: 700,
+      },
+      letterSpacing: {
+        'extra-tight': '-0.10em',
       },
     },
   },
