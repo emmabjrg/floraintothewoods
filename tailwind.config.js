@@ -13,6 +13,8 @@ module.exports = {
     "./pages/**/*.{astro,html,js}", 
   ],
   theme: {
+    colors: {
+      black: '#171719',},
     extend: {
       fontFamily: {
         manrope: ['Manrope', 'sans-serif'],
