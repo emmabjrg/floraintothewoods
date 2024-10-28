@@ -114,14 +114,19 @@ import "../styles/tailwind.css";
     </section>
 
     <div class="flex justify-end items-center h-screen w-screen">
-      <!-- Vertikal banner med animasjon -->
-      <div class="h-full flex items-center overflow-hidden">
-        <p
-          class="transform -rotate-90 text-4xl font-light tracking-widest whitespace-nowrap animate-scroll"
-        >
-          “The rococo has really become a vehicle for me to reflect on my
-          experience of being a woman.”
-        </p>
+      <div class="overflow-hidden h-full relative">
+        <div class="animate-scroll">
+          <p
+            class="transform -rotate-90 text-4xl font-light tracking-widest whitespace-nowrap"
+          >
+            “The rococo has really become a vehicle for me to reflect on my
+            experience of being a woman.” “The rococo has really become a
+            vehicle for me to reflect on my experience of being a woman.” “The
+            rococo has really become a vehicle for me to reflect on my
+            experience of being a woman.” “The rococo has really become a
+            vehicle for me to reflect on my experience of being a woman.”
+          </p>
+        </div>
       </div>
     </div>
 
@@ -222,16 +227,18 @@ import "../styles/tailwind.css";
     transform: translate(-50%, -50%);
     transition: transform 0.5s ease;
   }
-  @keyframes scroll {
-    0% {
-      transform: translateY(100%) rotate(-90deg);
-    }
-    100% {
-      transform: translateY(-100%) rotate(-90deg);
-    }
+  .animate-scroll {
+    display: flex;
+    flex-direction: column;
+    animation: scroll 1s linear infinite; /* Juster tidsintervallet etter behov */
   }
 
-  .animate-scroll {
-    animation: scroll 2s linear infinite;
+  @keyframes scroll {
+    0% {
+      transform: translateY(100%); /* Start under visningen */
+    }
+    100% {
+      transform: translateY(-100%); /* Flytt opp til over visningen */
+    }
   }
 </style>
