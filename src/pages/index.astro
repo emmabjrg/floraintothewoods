@@ -14,9 +14,8 @@ import "../styles/tailwind.css";
   <div class="custom-cursor"></div>
 
   <div id="scroll-container" class="flex overflow-x-auto h-screen">
-    <Udstillinger2 />
     <h1
-      class="hidden text-black blur-sm fixed inset-0 flex items-center justify-center font-cormorant italic font-light text-9xl whitespace-nowrap tracking-extra-tight pointer-events-none"
+      class="text-black blur-sm fixed inset-0 flex items-center justify-center font-cormorant italic font-light text-9xl whitespace-nowrap tracking-extra-tight pointer-events-none"
     >
       Flora Yukhnovich
     </h1>
@@ -27,7 +26,7 @@ import "../styles/tailwind.css";
     </div>
     <h3 class="p-10 whitespace-nowrap text-xl">18 Sep. 24 – 19 Jan. 25</h3>
 
-    <section class="flex h-screen flex-shrink-0 w-auto items-end">
+    <section class="flex h-screen flex-shrink-0 w-auto items-end pb-32">
       <img src="/src/assets/images/img1.webp" alt="" class="h-4/6" />
       <div class="">
         <p class="max-w-prose">
@@ -43,25 +42,6 @@ import "../styles/tailwind.css";
       </div>
     </section>
 
-    <!-- <section class="flex-shrink-0 w-screen h-screen flex items-center">
-      <div class="w-auto p-4">
-        <img src="src/assets/images/img1.webp" alt="billede her" class="" />
-      </div>
-      <div class="w-auto p-4 flex flex-col justify-center">
-        <h1 id="omflora" class="font-manrope text-sm">Seksjon 1</h1>
-        <p class="h-screen">
-          Flora Yukhnovich (b. 1990) is a British artist celebrated for her
-          distinctive fusion of figuration and abstraction, with Rococo as a
-          central influence. After transitioning from a background in graphic
-          design to painting, she completed an MA at City & Guilds of London Art
-          School. Her work explores themes of femininity and materiality,
-          blending elements of high and low culture. Yukhnovich’s paintings are
-          known for their sensuous and fluid compositions, where she
-          reinterprets historical artistic styles through a contemporary lens.
-        </p>
-      </div>
-    </section>
- -->
     <section class="flex-shrink-0 w-screen h-screen p-1 flex items-center">
       <div class="w-1/2 p-4">
         <img src="" alt="blomst her" class="w-full h-auto rounded-lg" />
@@ -72,7 +52,7 @@ import "../styles/tailwind.css";
       class="flex-shrink-0 w-screen h-screen p-9 flex flex-col justify-center items-center"
     >
       <h1 class="font-manrope text-sm">Seksjon 2</h1>
-      <p class="text-3xl p-10">
+      <p class="text-3xl">
         With Into the Woods, Ordrupgaard proudly presents Flora Yukhnovich in
         her first museum exhibition outside the UK. Known for her rising
         prominence in the art world, Yukhnovich brings together Rococo-inspired
@@ -93,7 +73,9 @@ import "../styles/tailwind.css";
       </div>
     </section>
 
-    <section class="flex-shrink-0 flex flex-col justify-center items-center">
+    <section
+      class="h-screen flex-shrink-0 flex flex-col justify-center items-center"
+    >
       <div class="w-1/2 p-4">
         <img src="" alt="blad her" class="w-full h-auto rounded-lg" />
       </div>
@@ -108,14 +90,14 @@ import "../styles/tailwind.css";
       </div>
     </section>
 
-    <section class="flex-shrink-0 w-screen h-screen p-96 flex items-center">
+    <section class="flex-shrink-0 w-screen h-screen flex items-center">
       <div class="w-1/2 p-4">
         <img src="" alt="kunst her" class="w-full h-auto rounded-lg" />
       </div>
       <div class="w-1/2 p-4">
         <img src="" alt="kunst her" class="w-full h-auto rounded-lg" />
       </div>
-      <div class="p-4 flex flex-col justify-center h-screen">
+      <div class="flex flex-col justify-center h-screen">
         <h1 class="font-manrope text-sm">Seksjon 4</h1>
         <p class="w-screen">
           Several of Yukhnovich’s portrayals of women are accompanied by titles
@@ -133,25 +115,22 @@ import "../styles/tailwind.css";
         </p>
       </div>
     </section>
-
+    -------------
     <div class="flex justify-end items-center h-screen w-screen">
       <div class="overflow-hidden h-full relative">
         <div class="animate-scroll">
           <p
-            class="transform -rotate-90 text-4xl font-light tracking-widest whitespace-nowrap"
+            class="scroll-text transform -rotate-90 text-3xl font-light whitespace-nowrap"
           >
-            “The rococo has really become a vehicle for me to reflect on my
-            experience of being a woman.” “The rococo has really become a
-            vehicle for me to reflect on my experience of being a woman.” “The
-            rococo has really become a vehicle for me to reflect on my
-            experience of being a woman.” “The rococo has really become a
-            vehicle for me to reflect on my experience of being a woman.”
+            The rococo has really become a vehicle for me to reflect on my
+            experience of being a woman.
           </p>
         </div>
       </div>
     </div>
+    -------
 
-    <section class="flex-shrink-0 w-screen h-screen p-96 flex items-center">
+    <section class="flex-shrink-0 w-screen h-screen flex items-center">
       <div class="w-1/2 p-4">
         <img src="" alt="kunst her" class="w-full h-auto rounded-lg" />
       </div>
@@ -163,7 +142,7 @@ import "../styles/tailwind.css";
       </div>
     </section>
 
-    <section class="flex-shrink-0 w-screen h-screen p-96 flex items-center">
+    <section class="flex-shrink-0 w-screen h-screen flex items-center">
       <div class="w-1/2 p-4">
         <img src="" alt="kunst her" class="w-full h-auto rounded-lg" />
       </div>
@@ -187,7 +166,7 @@ import "../styles/tailwind.css";
       </div>
     </section>
 
-    <section class="flex-shrink-0 w-screen h-screen p-96 flex items-center">
+    <section class="flex-shrink-0 w-screen h-screen flex items-center">
       <div class="w-1/2 p-4">
         <img src="" alt="kunst her" class="w-full h-auto rounded-lg" />
       </div>
@@ -224,7 +203,7 @@ import "../styles/tailwind.css";
     </section>
 
     <section
-      class="flex-shrink-0 w-screen h-screen p-96 flex flex-col justify-center items-center"
+      class="flex-shrink-0 w-screen h-screen flex flex-col justify-center items-center"
     >
       <banner class="font-manrope text-5xl transform -rotate-90">
         Reviews</banner
@@ -233,19 +212,18 @@ import "../styles/tailwind.css";
     </section>
 
     <section
-      class="flex-shrink-0 w-screen h-screen p-96 flex flex-col justify-center items-center"
+      class="flex-shrink-0 w-screen h-screen flex flex-col justify-center items-center"
     >
       <banner class="font-manrope text-5xl transform -rotate-90"
         >Newsletter</banner
       >
       <p></p>
     </section>
-
-    <section
-      class="flex-shrink-0 w-screen h-screen p-96 flex flex-col justify-center items-center"
-    >
-      <Udstillinger />
-      <p></p>
+    <section class="flex p-0 justify-around">
+      <banner class="font-manrope text-5xl transform -rotate-90 items-end"
+        >Udstillinger</banner
+      >
+      <Udstillinger2 />
     </section>
   </div>
 
@@ -301,6 +279,10 @@ import "../styles/tailwind.css";
     cursor: none;
   }
 
+  section body div {
+    height: 100vh;
+  }
+
   .custom-cursor {
     position: absolute;
     width: 60px;
@@ -310,19 +292,38 @@ import "../styles/tailwind.css";
     pointer-events: none;
     transform: translate(-50%, -50%);
     transition: transform 0.5s ease;
+  } /* Ensure the container limits overflow for the scrolling effect */
+  /* Container for the overflow and scrolling effect */
+  .overflow-hidden {
+    overflow: hidden;
+    height: 100vh;
+    position: relative;
   }
+
+  /* Animation setup for smooth continuous scroll */
   .animate-scroll {
     display: flex;
     flex-direction: column;
-    animation: scroll 1s linear infinite; /* Juster tidsintervallet etter behov */
+    animation: scroll 10s linear infinite;
   }
 
+  /* Space between each repeated text */
+  .scroll-text {
+    margin-bottom: 4rem; /* Adjust as needed for more or less spacing */
+  }
+
+  /* Keyframes for a smooth, continuous scroll without reset */
   @keyframes scroll {
     0% {
-      transform: translateY(100%); /* Start under visningen */
+      transform: translateY(-100%); /* Start below the view */
+    }
+    50% {
+      transform: translateY(100%); /* Move text up fully out of view */
     }
     100% {
-      transform: translateY(-100%); /* Flytt opp til over visningen */
+      transform: translateY(
+        -100%
+      ); /* Reset position to below view for seamless loop */
     }
   }
 </style>
