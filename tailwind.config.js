@@ -14,7 +14,15 @@ module.exports = {
   ],
   theme: {
     colors: {
-      black: '#171719',},
+      black: '#171719',
+      accent:'#A72631',
+      primary: '#517587',
+      detail: '#969A9E',    
+    },
+       
+
+
+
     extend: {
       fontFamily: {
         manrope: ['Manrope', 'sans-serif'],
