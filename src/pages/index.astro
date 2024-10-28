@@ -170,10 +170,35 @@ import "../styles/tailwind.css";
 
     const customCursor = document.querySelector(".custom-cursor");
 
+    // Startposisjon for markøren
+    let cursorX = 0,
+      cursorY = 0;
+    // Musens posisjon
+    let mouseX = 0,
+      mouseY = 0;
+
+    // Oppdaterer musens posisjon ved bevegelse
     document.addEventListener("mousemove", (e) => {
-      customCursor.style.left = `${e.pageX}px`;
-      customCursor.style.top = `${e.pageY}px`;
+      mouseX = e.pageX;
+      mouseY = e.pageY;
     });
+
+    // Funksjon som gjør at markøren "følger" musen med en delay
+    function animateCursor() {
+      // Beregner posisjonen med en liten forsinkelse
+      cursorX += (mouseX - cursorX) * 0.1;
+      cursorY += (mouseY - cursorY) * 0.1;
+
+      // Setter posisjonen til markøren
+      customCursor.style.left = `${cursorX}px`;
+      customCursor.style.top = `${cursorY}px`;
+
+      // Kaller funksjonen igjen på neste ramme for jevn animasjon
+      requestAnimationFrame(animateCursor);
+    }
+
+    // Starter animasjonen
+    animateCursor();
   </script>
 </MainLayout>
 
