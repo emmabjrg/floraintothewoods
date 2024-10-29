@@ -28,7 +28,10 @@ import "../styles/tailwind.css";
     </div>
     <h3 class="p-10 whitespace-nowrap text-xl">18 Sep. 24 – 19 Jan. 25</h3>
 
-    <section class="flex h-screen flex-shrink-0 w-auto items-end">
+    <section
+      id="theartist"
+      class="flex h-screen flex-shrink-0 w-auto items-end"
+    >
       <img src="/src/assets/images/img1.webp" alt="" class="h-4/6" />
       <div class="">
         <p class="max-w-prose">
@@ -65,15 +68,20 @@ import "../styles/tailwind.css";
  -->
     <section class="flex-shrink-0 w-screen h-screen p-1 flex items-center">
       <div class="w-2/5 p-4">
-        <img src="src/assets/images/blomst1.png" alt="blomst" class="w-full h-auto" />
+        <img
+          src="src/assets/images/blomst1.png"
+          alt="blomst"
+          class="w-full h-auto"
+        />
       </div>
     </section>
 
     <section
+      id="theartwork"
       class="flex-shrink-0 w-screen h-screen p-9 flex flex-col justify-center items-center"
     >
       <h1 class="font-manrope text-sm">Seksjon 2</h1>
-      <p class="text-3xl p-10">
+      <p class="font-manrope text-3xl p-10">
         With Into the Woods, Ordrupgaard proudly presents Flora Yukhnovich in
         her first museum exhibition outside the UK. Known for her rising
         prominence in the art world, Yukhnovich brings together Rococo-inspired
@@ -89,18 +97,29 @@ import "../styles/tailwind.css";
     </section>
 
     <section class="flex-shrink-0 w-screen h-screen p-1 flex items-center">
-      <div class="w-1/2 p-4">
+      <div class="w-1/2 p-4 relative group">
         <img
           src="src/assets/images/img2.webp"
           alt="kunst"
           class="w-full h-auto"
         />
+        <div
+          class="m-2 absolute inset-0 flex items-end justify-left bg-opacity-50 text-white p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+        >
+          <span class="text-lg font-manrope font-light"
+            >Flora Yukhnovich, Capriccio, 2019</span
+          >
+        </div>
       </div>
     </section>
 
     <section class="flex-shrink-0 flex flex-col justify-center items-center">
       <div class="w-1/4 p-4">
-        <img src="src/assets/images/blomst3.png" alt="blad" class="w-full h-auto" />
+        <img
+          src="src/assets/images/blomst3.png"
+          alt="blad"
+          class="w-full h-auto"
+        />
       </div>
       <h1 class="font-manrope text-sm">Seksjon 3</h1>
 
@@ -109,7 +128,11 @@ import "../styles/tailwind.css";
         painting process.
       </banner>
       <div class="w-96 p-4 ml-40">
-        <img src="src/assets/images/blomst2.png" alt="blomst" class="w-full h-auto" />
+        <img
+          src="src/assets/images/blomst2.png"
+          alt="blomst"
+          class="w-full h-auto"
+        />
       </div>
     </section>
 
@@ -133,7 +156,7 @@ import "../styles/tailwind.css";
     <section class="flex-shrink-0 w-screen h-screen p-96 flex items-center">
       <div class="p-4 flex flex-col justify-center h-screen">
         <h1 class="font-manrope text-sm">Seksjon 4</h1>
-        <p class="w-screen">
+        <p class="w-screen font-manrope">
           Several of Yukhnovich’s portrayals of women are accompanied by titles
           that refer to delicious desserts. She thereby creates a slightly
           ironic distance to the erotic objectification of women which can be
@@ -200,7 +223,7 @@ import "../styles/tailwind.css";
       </div>
       <div class="p-4 flex flex-col h-screen w-screen">
         <h1 class="font-manrope text-sm">Seksjon 5</h1>
-        <p class="">
+        <p class="font-manrope">
           The work Minuet is based on a painting by the Italian Rococo painter
           Giovanni Domenico Tiepolo. The painting, which hangs in the Louvre in
           Paris, depicts a dancing couple surrounded by masked spectators. The
@@ -208,7 +231,7 @@ import "../styles/tailwind.css";
           couples that dominated the aristocratic ballrooms of Europe from ca.
           1650–1750.
         </p>
-        <p class="pt-2">
+        <p class="pt-2 font-manrope">
           In the work, Yukhnovich has also incorporated figures from the French
           Rococo painter Antoine Watteau’s depictions of commedia dell’arte.
           Commedia dell’arte is an Italian theatre form that originated in the
@@ -272,7 +295,7 @@ import "../styles/tailwind.css";
           class="flex-shrink-0 w-screen h-screen p-9 flex flex-col justify-center items-center"
         >
           <h1 class="font-manrope text-sm">Seksjon 2</h1>
-          <p class="text-xl p-10">
+          <p class="text-xl p-10 font-manrope">
             As you reach the end of this journey through Into the Woods, Flora
             Yukhnovich's captivating exploration of art history and contemporary
             culture, we invite you to experience these works in person. Step
@@ -290,11 +313,14 @@ import "../styles/tailwind.css";
       </p>
     </section>
 
-    <section class="flex-shrink-0 w-screen h-screen p-96 flex flex-col justify-center items-center">
-      <img src="src/assets/images/blomst4.png" alt="blomst">
+    <section
+      class="flex-shrink-0 w-screen h-screen p-96 flex flex-col justify-center items-center"
+    >
+      <img src="src/assets/images/blomst4.png" alt="blomst" />
     </section>
 
-    <section id="sectionreview"
+    <section
+      id="review"
       class="flex-shrink-0 w-screen h-screen p-96 flex flex-col justify-center items-center"
     >
       <banner class="font-manrope text-5xl transform -rotate-90">
