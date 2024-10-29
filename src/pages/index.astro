@@ -8,15 +8,16 @@ import Nyhedsbrev from "../components/Nyhedsbrev.astro";
 import "../styles/tailwind.css";
 ---
 
+<!-------------------------- MAINLAYOUT HER ---------------------->
 <MainLayout title="Flora Yukhnovich - Into the Woods">
   <link
     href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
     rel="stylesheet"
   />
   <div class="custom-cursor"></div>
-
-  <div id="scroll-container" class="flex overflow-x-auto h-screen">
+  <div id="scroll-container" class="flex overflow-x-auto h-screen w-full">
     <h1
+      id="fixed-title"
       class="z-[-1] text-black fixed inset-0 flex items-center justify-center font-cormorant italic font-light text-[16vw] whitespace-nowrap tracking-extra-tight pointer-events-none"
     >
       Flora Yukhnovich
@@ -28,13 +29,13 @@ import "../styles/tailwind.css";
         Into the Woods
       </h2>
     </div>
-    <h3 class="font-manrope p-10 whitespace-nowrap text-2xl text-accent">
+    <h3 class="font-manrope whitespace-nowrap text-2xl text-accent">
       18 Sep. 24 – 19 Jan. 25
     </h3>
 
     <section
       id="theartist"
-      class="flex h-screen flex-shrink-0 w-auto items-end"
+      class="flex h-screen flex-shrink-0 w-auto items-end -mt-32"
     >
       <img src="/src/assets/images/img1.webp" alt="" class="h-4/6" />
       <div class="">
@@ -82,10 +83,10 @@ import "../styles/tailwind.css";
 
     <section
       id="theartwork"
-      class="flex-shrink-0 w-screen h-screen p-9 flex flex-col justify-center items-center"
+      class="flex-shrink-0 w-screen h-screen p-9 flex flex-col justify-center items-center -mt-20"
     >
       <h1 class="font-manrope text-sm">Seksjon 2</h1>
-      <p class="font-manrope text-3xl p-10">
+      <p class="font-manrope text-lg p-10">
         With Into the Woods, Ordrupgaard proudly presents Flora Yukhnovich in
         her first museum exhibition outside the UK. Known for her rising
         prominence in the art world, Yukhnovich brings together Rococo-inspired
@@ -100,7 +101,9 @@ import "../styles/tailwind.css";
       </p>
     </section>
 
-    <section class="flex-shrink-0 w-screen h-screen p-1 flex items-center">
+    <section
+      class="flex-shrink-0 w-screen h-screen p-1 flex items-center -mt-20"
+    >
       <div class="w-1/2 p-4 relative group">
         <img
           src="src/assets/images/img2.webp"
@@ -140,15 +143,17 @@ import "../styles/tailwind.css";
       </div>
     </section>
 
-    <section class="flex-shrink-0 w-screen h-screen p-96 flex items-center">
-      <div class="w-1/2 p-4">
+    <section
+      class="flex-shrink-0 w-screen h-screen flex items-center justify-center gap-4 flex-col px-56"
+    >
+      <div class="w-[22vw]">
         <img
           src="src/assets/images/img3.webp"
           alt="kunst"
           class="w-full h-auto"
         />
       </div>
-      <div class="w-1/2 p-4">
+      <div class="w-[22vw]">
         <img
           src="src/assets/images/img4.webp"
           alt="kunst"
@@ -157,7 +162,7 @@ import "../styles/tailwind.css";
       </div>
     </section>
 
-    <section class="flex-shrink-0 w-screen h-screen p-96 flex items-center">
+    <section class="flex-shrink-0 w-screen h-screen flex items-center">
       <div class="p-4 flex flex-col justify-center h-screen">
         <h1 class="font-manrope text-sm">Seksjon 4</h1>
         <p class="w-screen font-manrope">
@@ -203,7 +208,7 @@ import "../styles/tailwind.css";
       </div>
     </div>
 
-    <section class="flex-shrink-0 w-screen h-screen p-96 flex items-center">
+    <section class="flex-shrink-0 w-screen h-screen flex items-center">
       <div class="p-4 w-max">
         <img src="src/assets/images/img5.webp" alt="" class="w-full h-auto" />
       </div>
@@ -215,7 +220,7 @@ import "../styles/tailwind.css";
       </div>
     </section>
 
-    <!-- <section class="flex-shrink-0 w-screen h-screen p-96 flex items-center">
+    <!-- <section class="flex-shrink-0 w-screen h-screen  flex items-center">
       <div class="w-full p-4">
         <img
           src="src/assets/images/img8.webp"
@@ -271,7 +276,7 @@ import "../styles/tailwind.css";
       </div>
     </section>
 
-    <section class="flex-shrink-0 w-screen h-screen p-96 flex items-center">
+    <section class="flex-shrink-0 w-screen h-screen flex items-center">
       <div class="w-1/2 p-4">
         <img
           src="src/assets/images/img9.webp"
@@ -316,14 +321,14 @@ import "../styles/tailwind.css";
     </section>
 
     <section
-      class="flex-shrink-0 w-screen h-screen p-96 flex flex-col justify-center items-center"
+      class="flex-shrink-0 w-screen h-screen flex flex-col justify-center items-center"
     >
       <img src="src/assets/images/blomst4.png" alt="blomst" />
     </section>
 
     <section
       id="review"
-      class="flex-shrink-0 w-screen h-screen p-96 flex flex-col justify-center items-center"
+      class="flex-shrink-0 w-screen h-screen flex flex-col justify-center items-center"
     >
       <banner class="font-manrope text-5xl transform -rotate-90">
         Reviews</banner
@@ -363,14 +368,14 @@ import "../styles/tailwind.css";
     </section>
 
     <section
-      class="flex-shrink-0 w-screen h-screen p-96 flex flex-col justify-center items-center"
+      class="flex-shrink-0 w-screen h-screen flex flex-col justify-center items-center"
     >
       <Nyhedsbrev />
       <p></p>
     </section>
 
     <section
-      class="flex-shrink-0 w-screen h-screen p-96 flex flex-col justify-center items-center"
+      class="flex-shrink-0 w-screen h-screen flex flex-col justify-center items-center"
     >
       <Udstillinger2 />
       <p></p>
@@ -378,6 +383,7 @@ import "../styles/tailwind.css";
   </div>
 
   <script>
+    //----------------------scroll-hori--------------------------//
     const scrollContainer = document.getElementById("scroll-container");
 
     window.addEventListener(
@@ -389,68 +395,85 @@ import "../styles/tailwind.css";
       },
       { passive: false }
     );
+    //----------------------custom-mouse--------------------------//
 
     const customCursor = document.querySelector(".custom-cursor");
 
-    // Startposisjon for markøren
     let cursorX = 0,
       cursorY = 0;
-    // Musens posisjon
     let mouseX = 0,
       mouseY = 0;
 
-    // Oppdaterer musens posisjon ved bevegelse
     document.addEventListener("mousemove", (e) => {
       mouseX = e.pageX;
       mouseY = e.pageY;
     });
 
-    // Funksjon som gjør at markøren "følger" musen med en delay
     function animateCursor() {
-      // Beregner posisjonen med en liten forsinkelse
       cursorX += (mouseX - cursorX) * 0.1;
       cursorY += (mouseY - cursorY) * 0.1;
 
-      // Setter posisjonen til markøren
       customCursor.style.left = `${cursorX}px`;
       customCursor.style.top = `${cursorY}px`;
 
-      // Kaller funksjonen igjen på neste ramme for jevn animasjon
       requestAnimationFrame(animateCursor);
     }
-
-    // Starter animasjonen
     animateCursor();
+
+    //--------------------blur????--------------//
+    const fixedTitle = document.getElementById("fixed-title");
+    const blurThreshold = 1000;
+
+    document
+      .getElementById("scroll-container")
+      .addEventListener("scroll", () => {
+        if (
+          document.getElementById("scroll-container").scrollLeft > blurThreshold
+        ) {
+          fixedTitle.classList.add("blur-sm");
+        } else {
+          fixedTitle.classList.remove("blur-sm");
+        }
+      });
   </script>
-
-  <style>
-    body {
-      cursor: none;
-    }
-
-    .custom-cursor {
-      position: absolute;
-      width: 60px;
-      height: 60px;
-      border: 1px solid #517587;
-      border-radius: 50%;
-      pointer-events: none;
-      transform: translate(-50%, -50%);
-      transition: transform 0.5s ease;
-    }
-    .animate-scroll {
-      display: flex;
-      flex-direction: column;
-      animation: scroll 15s linear infinite; /* Juster tidsintervallet etter behov */
-    }
-
-    @keyframes scroll {
-      0% {
-        transform: translateY(100%); /* Start under visningen */
-      }
-      100% {
-        transform: translateY(-100%); /* Flytt opp til over visningen */
-      }
-    }
-  </style>
 </MainLayout>
+
+<!-------------------------- STYLE ---------------------->
+<style>
+  body {
+    cursor: none;
+  }
+
+  .custom-cursor {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border: 1px solid #517587;
+    border-radius: 50%;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    transition: transform 0.5s ease;
+  }
+  .animate-scroll {
+    display: flex;
+    flex-direction: column;
+    animation: scroll 15s linear infinite; /* Juster tidsintervallet etter behov */
+  }
+
+  @keyframes scroll {
+    0% {
+      transform: translateY(100%); /* Start under visningen */
+    }
+    100% {
+      transform: translateY(-100%); /* Flytt opp til over visningen */
+    }
+  }
+  /*----------blur???-----------*/
+  #fixed-title {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: filter 1s ease; /* Smooth blur transition */
+  }
+</style>
