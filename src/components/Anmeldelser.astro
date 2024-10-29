@@ -1,15 +1,11 @@
 ---
-
+const { omtale, stjerner, anmelder } = Astro.props;
 ---
 
-<article>
-  <h4>Poltiken</h4>
-  <p>&#9733;&#9733;&#9734;&#9734;&#9734;</p>
-  <p>
-    This exhibition was not so good blah and I don't think so This exhibition
-    was not so good blah and I don't think so This exhibition was not so good
-    blah and I don't think so This exhibition was not so good blah and I don't
-    think so This exhibition was not so good blah and I don't think so This
-    exhibition was not so good blah and I don't think so
+<article class="font-manrope">
+  <h4 class="text-xl">{anmelder}</h4>
+  <p>{stjerner}</p>
+  <p class="text-sm w-[600px]">
+    {omtale}
   </p>
 </article>

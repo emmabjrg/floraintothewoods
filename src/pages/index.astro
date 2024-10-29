@@ -2,6 +2,7 @@
 import Udstillinger from "../components/Udstillinger.astro";
 import MainLayout from "../layouts/MainLayout.astro";
 import Udstillinger2 from "../components/Udstillinger2.astro";
+import Anmeldelser from "../components/Anmeldelser.astro";
 import "../styles/tailwind.css";
 ---
 
@@ -10,7 +11,6 @@ import "../styles/tailwind.css";
     href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
     rel="stylesheet"
   />
-
   <div class="custom-cursor"></div>
 
   <div id="scroll-container" class="flex overflow-x-auto h-screen">
@@ -228,7 +228,33 @@ import "../styles/tailwind.css";
       <banner class="font-manrope text-5xl transform -rotate-90">
         Reviews</banner
       >
-      <p></p>
+      <div class="grid grid-cols-2">
+        <Anmeldelser
+          anmelder="Politiken"
+          stjerner="★★☆☆☆"
+          omtale="Københavnerbilleder er en grundig introduktion til at skyde billeder med retro-kant. Hvad enten du er har arbejdet med foto siden 135-filmen kom på markedet, du kun har skudt digitalt eller er helt nybegynder, er der masser af tips og tricks i bogen."
+        />
+        <Anmeldelser
+          anmelder="Politiken"
+          stjerner="★★☆☆☆"
+          omtale="Københavnerbilleder er en grundig introduktion til at skyde billeder med retro-kant. Hvad enten du er har arbejdet med foto siden 135-filmen kom på markedet, du kun har skudt digitalt eller er helt nybegynder, er der masser af tips og tricks i bogen."
+        />
+        <Anmeldelser
+          anmelder="Politiken"
+          stjerner="★★☆☆☆"
+          omtale="Københavnerbilleder er en grundig introduktion til at skyde billeder med retro-kant. Hvad enten du er har arbejdet med foto siden 135-filmen kom på markedet, du kun har skudt digitalt eller er helt nybegynder, er der masser af tips og tricks i bogen."
+        />
+        <Anmeldelser
+          anmelder="Politiken"
+          stjerner="★★☆☆☆"
+          omtale="Københavnerbilleder er en grundig introduktion til at skyde billeder med retro-kant. Hvad enten du er har arbejdet med foto siden 135-filmen kom på markedet, du kun har skudt digitalt eller er helt nybegynder, er der masser af tips og tricks i bogen."
+        />
+        <Anmeldelser
+          anmelder="Politiken"
+          stjerner="★★☆☆☆"
+          omtale="Københavnerbilleder er en grundig introduktion til at skyde billeder med retro-kant. Hvad enten du er har arbejdet med foto siden 135-filmen kom på markedet, du kun har skudt digitalt eller er helt nybegynder, er der masser af tips og tricks i bogen."
+        />
+      </div>
     </section>
 
     <section
@@ -293,35 +319,35 @@ import "../styles/tailwind.css";
     // Starter animasjonen
     animateCursor();
   </script>
+
+  <style>
+    body {
+      cursor: none;
+    }
+
+    .custom-cursor {
+      position: absolute;
+      width: 60px;
+      height: 60px;
+      border: 1px solid #517587;
+      border-radius: 50%;
+      pointer-events: none;
+      transform: translate(-50%, -50%);
+      transition: transform 0.5s ease;
+    }
+    .animate-scroll {
+      display: flex;
+      flex-direction: column;
+      animation: scroll 1s linear infinite; /* Juster tidsintervallet etter behov */
+    }
+
+    @keyframes scroll {
+      0% {
+        transform: translateY(100%); /* Start under visningen */
+      }
+      100% {
+        transform: translateY(-100%); /* Flytt opp til over visningen */
+      }
+    }
+  </style>
 </MainLayout>
-
-<style>
-  body {
-    cursor: none;
-  }
-
-  .custom-cursor {
-    position: absolute;
-    width: 60px;
-    height: 60px;
-    border: 1px solid #517587;
-    border-radius: 50%;
-    pointer-events: none;
-    transform: translate(-50%, -50%);
-    transition: transform 0.5s ease;
-  }
-  .animate-scroll {
-    display: flex;
-    flex-direction: column;
-    animation: scroll 1s linear infinite; /* Juster tidsintervallet etter behov */
-  }
-
-  @keyframes scroll {
-    0% {
-      transform: translateY(100%); /* Start under visningen */
-    }
-    100% {
-      transform: translateY(-100%); /* Flytt opp til over visningen */
-    }
-  }
-</style>
