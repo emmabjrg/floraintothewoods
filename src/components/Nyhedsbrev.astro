@@ -1,0 +1,52 @@
+---
+
+---
+
+<form>
+  <h2>Sign up for our newsletter!</h2>
+  <label for="name"></label>
+  <input type="text" id="name" name="name" placeholder="  Your name" required />
+
+  <label for="email"></label>
+  <input
+    type="email"
+    id="email"
+    name="email"
+    placeholder=" Your e-postadresse"
+    required
+  />
+
+  <h2>
+    Get news about exhibitions, events and exclusive offers from Ordrup Gaard
+  </h2>
+
+  <div class="flex items-center my-2">
+    <input
+      type="checkbox"
+      id="processData"
+      name="processData"
+      required
+      class="appearance-none h-4 w-4 rounded-full border border-gray-400
+                  checked:bg-detail checked:border-detail focus:outline-none"
+    />
+    <label for="processData" class="ml-2"
+      >Authorize Ordrup Gaard to process your personal data</label
+    >
+  </div>
+
+  <div class="flex items-center my-2">
+    <input
+      type="checkbox"
+      id="shareMarketing"
+      name="shareMarketing"
+      required
+      class="appearance-none h-4 w-4 rounded-full border border-gray-400
+                  checked:bg-detail checked:border-detail focus:outline-none"
+    />
+    <label for="shareMarketing" class="ml-2"
+      >Authorize Ordrup Gaard to share your email for marketing purposes</label
+    >
+  </div>
+
+  <button class="" type="submit">Submit</button>
+</form>
