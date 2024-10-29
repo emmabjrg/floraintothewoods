@@ -22,7 +22,7 @@ import "../styles/tailwind.css";
     >
       Flora Yukhnovich
     </h1>
-    <div class="flex items-center w-screen h-screen justify-center">
+    <div id="start" class="flex items-center w-screen h-screen justify-center">
       <h2
         class="mt-14 font-manrope font-light text-[6vw] text-center w-screen tracking-tight pt-[12vw]"
       >
@@ -76,7 +76,7 @@ import "../styles/tailwind.css";
     </section>
 
     <section
-      class="flex-shrink-0 w-screen p-1 items-center flex justify-center mx-40 z-10"
+      class="flex-shrink-0 w-screen p-1 items-center flex justify-center mr-40 z-10"
     >
       <div class="w-1/2 relative group">
         <img
@@ -94,64 +94,72 @@ import "../styles/tailwind.css";
       </div>
     </section>
 
-    <section class="flex-shrink-0 flex flex-col justify-center items-center">
-      <div class="w-1/4 p-4">
+    <section
+      class="flex-shrink-0 flex flex-col justify-center items-center h-screen"
+    >
+      <div class="-mt-10">
         <img
           src="src/assets/images/blomst3.png"
           alt="blad"
-          class="w-full h-auto"
+          class="w-auto h-80"
         />
       </div>
-      <h1 class="font-manrope text-sm">Seksjon 3</h1>
-
-      <banner class="text-7xl font-manrope font-light">
-        <span class="font-sans font-extrabold">"</span>I think of nature as
-        something both accidental and deliberate in the painting process.
-      </banner>
-      <div class="w-96 p-4 ml-40">
+      <div class="flex flex-col gap-2 -mt-14 ml-20">
+        <div>
+          <img
+            src="/quotemark.svg"
+            alt=""
+            class="h-20 p-2 rotate-180 self-start"
+          />
+        </div>
+        <banner class="text-7xl font-manrope font-light px-16">
+          I think of nature as something both accidental and deliberate in the
+          painting process.
+        </banner>
+      </div>
+      <div class="w-96 self-start ml-[90vw] -mt-6">
         <img
           src="src/assets/images/blomst2.png"
           alt="blomst"
-          class="w-full h-auto"
+          class="w-auto h-48"
         />
       </div>
     </section>
 
     <section
-      class="flex-shrink-0 w-screen h-screen flex items-center justify-center gap-4 flex-col px-56"
+      class="flex-shrink-0 h-screen flex items-end justify-center gap-4 flex-col pl-56"
     >
-      <div class="w-[22vw]">
-        <img
-          src="src/assets/images/img3.webp"
-          alt="kunst"
-          class="w-full h-auto"
-        />
-      </div>
-      <div class="w-[22vw]">
+      <div class="">
         <img
           src="src/assets/images/img4.webp"
           alt="kunst"
-          class="w-full h-auto"
+          class="w-64 h-auto"
+        />
+      </div>
+      <div class="">
+        <img
+          src="src/assets/images/img3.webp"
+          alt="kunst"
+          class="w-64 h-auto"
         />
       </div>
     </section>
 
     <section class="flex-shrink-0 w-screen h-screen flex items-center">
       <div class="p-4 flex flex-col justify-center h-screen">
-        <h1 class="font-manrope text-sm">Seksjon 4</h1>
-        <p class="w-screen font-manrope">
+        <p class="w-[650px] font-manrope">
           Several of Yukhnovich’s portrayals of women are accompanied by titles
           that refer to delicious desserts. She thereby creates a slightly
           ironic distance to the erotic objectification of women which can be
           seen in many Rococo paintings. The title of this work, A Glass and a
           Half, has its origin in a slogan used by the British chocolate
-          manufacturer, Cadbury. The slogan ‘A Glass and a Half’ was introduced
-          by Cadbury in 1928 to emphasise the extra high milk content of their
-          chocolate bars, presenting them as the creamiest on the market. On the
-          right, In A Glass and a Half, Yukhnovich takes her point of departure
-          in a painting by the French Rococo painter Jean-Honoré Fragonard. This
-          painting, which hangs in the Louvre in Paris, depicts the story of the
-          crusader Rinaldo in Armida’s enchanted gardens.
+          manufacturer, Cadbury. <br /><br />
+          The slogan ‘A Glass and a Half’ was introduced by Cadbury in 1928 to emphasise
+          the extra high milk content of their chocolate bars, presenting them as
+          the creamiest on the market. On the right, In A Glass and a Half, Yukhnovich
+          takes her point of departure in a painting by the French Rococo painter
+          Jean-Honoré Fragonard. This painting, which hangs in the Louvre in Paris,
+          depicts the story of the crusader Rinaldo in Armida’s enchanted gardens.
         </p>
       </div>
     </section>
@@ -169,7 +177,7 @@ import "../styles/tailwind.css";
       </div>
     </div> -->
 
-    <div class="flex justify-end items-center h-screen w-screen">
+    <div class="flex justify-end items-center h-screen w-48">
       <div class="overflow-hidden h-full relative">
         <div class="animate-scroll h-full">
           <p
@@ -342,14 +350,14 @@ import "../styles/tailwind.css";
     </section>
 
     <section
-      class="flex-shrink-0 w-screen h-screen flex flex-col justify-center items-center"
+      class="flex-shrink-0 w-screen h-screen flex flex-col justify-center items-center bg-white"
     >
       <Nyhedsbrev />
       <p></p>
     </section>
 
     <section
-      class="flex-shrink-0 w-screen h-screen flex flex-col justify-center items-center"
+      class="flex-shrink-0 w-screen h-screen flex flex-col justify-center items-center bg-white mt-14"
     >
       <Udstillinger2 />
       <p></p>
