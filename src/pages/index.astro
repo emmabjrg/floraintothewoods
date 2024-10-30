@@ -140,18 +140,18 @@ import "../styles/tailwind.css";
       </div>
     </section>
 
-
-
     <div class="flex justify-end items-center h-screen w-48">
       <div class="overflow-hidden h-full relative">
         <div class="animate-scroll h-full">
-          <p class="rotate-90 text-8xl font-light tracking-widest whitespace-nowrap">
-            The rococo has become a vehicle for me to reflect on my experience of being a woman.
+          <p
+            class="rotate-90 text-8xl font-light tracking-widest whitespace-nowrap"
+          >
+            The rococo has become a vehicle for me to reflect on my experience
+            of being a woman.
           </p>
         </div>
       </div>
     </div>
-
 
     <section class="flex-shrink-0 w-screen h-screen flex items-center">
       <div class="p-4 w-max">
@@ -265,12 +265,12 @@ import "../styles/tailwind.css";
 
     <section
       id="review"
-      class="flex-shrink-0 w-screen h-screen flex flex-col justify-center items-center"
+      class="flex-shrink-0 w-full h-screen flex justify-center items-center"
     >
-      <banner class="font-manrope text-5xl transform -rotate-90">
-        Reviews</banner
-      >
-      <div class="grid grid-cols-2 w-screen justify-start">
+      <div class="flex justify-center items-end pb-14 h-full p-4">
+        <p class="[writing-mode:vertical-lr] font-manrope text-5xl">Reviews</p>
+      </div>
+      <div class="grid grid-cols-2 w-[60vw] justify-start gap-6">
         <Anmeldelser
           anmelder="Kristeligt Dagblad"
           stjerner="★★★★★"
@@ -305,15 +305,18 @@ import "../styles/tailwind.css";
     </section>
 
     <section
-      class="flex-shrink-0 w-screen h-screen flex flex-col justify-center items-center bg-white"
+      class="flex-shrink-0 w-screen h-screen flex justify-center items-center"
     >
       <Nyhedsbrev />
       <p></p>
     </section>
 
     <section
-      class="flex-shrink-0 w-screen h-screen flex flex-col justify-center items-center bg-white mt-14"
+      class="flex-shrink-0 w-screen h-screen flex justify-center items-center mt-14"
     >
+      <div class="flex justify-center items-end pb-14 h-full p-4">
+        <p class="[writing-mode:vertical-lr] font-manrope text-5xl">Previous</p>
+      </div>
       <Udstillinger2 />
       <p></p>
     </section>
@@ -397,23 +400,21 @@ import "../styles/tailwind.css";
     animation: scroll 20s linear infinite;
   } */
 
-  .animate-scroll{
+  .animate-scroll {
     display: flex;
     flex-direction: column;
     animation: scroll 20s infinite linear;
   }
 
-
   @keyframes scroll {
-  0% {
-    transform: translateY(110%); /* Start completely below the container */
+    0% {
+      transform: translateY(110%); /* Start completely below the container */
+    }
+    100% {
+      transform: translateY(-420%); /* Exit above the container */
+    }
   }
-  100% {
-    transform: translateY(-420%); /* Exit above the container */
-  }
-}
 
-  
   /*----------blur???-----------*/
   #fixed-title {
     position: fixed;
