@@ -24,12 +24,12 @@ import "../styles/tailwind.css";
     </h1>
     <div id="start" class="flex items-center w-screen h-screen justify-center">
       <h2
-        class="mt-14 font-manrope font-light text-[6vw] text-center w-screen tracking-tight pt-[12vw]"
+        class="mt-14 font-manrope font-light text-[6vw] text-center w-screen tracking-tight pt-[13vw]"
       >
         Into the Woods
       </h2>
     </div>
-    <h3 class="font-manrope whitespace-nowrap text-2xl text-accent mt-20 mx-32">
+    <h3 class="font-manrope whitespace-nowrap text-2xl text-accent mt-20 ml-32">
       18 Sep. 24 – 19 Jan. 25
     </h3>
 
@@ -37,7 +37,8 @@ import "../styles/tailwind.css";
       id="theartist"
       class="flex h-screen flex-shrink-0 w-auto justify-center items-end mx-32 -mt-16"
     >
-      <img src="/img1.webp" alt="" class="h-4/6" />
+      <img src="/img1.webp" alt="art" class="h-4/6 pr-5"/>
+
       <div class="">
         <p class="max-w-prose">
           Flora Yukhnovich (b. 1990) is a British artist celebrated for her
@@ -152,7 +153,6 @@ import "../styles/tailwind.css";
       </div>
     </div>
 
-
     <section class="flex-shrink-0 w-screen h-screen flex items-center">
       <div class="p-4 w-max">
         <img src="/img5.webp" alt="" class="w-full h-auto" />
@@ -221,12 +221,31 @@ import "../styles/tailwind.css";
       </div>
     </section>
 
-    <section class="flex-shrink-0 w-screen h-screen flex items-center">
+
+    <!-- <section class="flex-shrink-0 w-screen h-screen flex items-center">
       <div class="w-1/2 p-4">
         <img src="/img9.webp" alt="kunst" class="w-full h-auto" />
       </div>
       <div class="w-1/2 p-4">
         <img src="/img10.webp" alt="kunst her" class="w-full h-auto" />
+      </div>
+    </section> -->
+
+    <section class="flex-shrink-0 w-screen h-screen flex items-center">
+      <!-- Første billede med "hej1234" på hover -->
+      <div class="w-1/3 p-4 relative group">
+        <img src="/img9.webp" alt="art" class="w-full h-auto" />
+        <div class="absolute bottom-0 left-0 p-6 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-lg font-manrope font-light">
+          Flora Yukhnovich, Rouge Allure, 2022
+        </div>
+      </div>
+    
+      <!-- Andet billede med "test123" på hover -->
+      <div class="w-1/3 p-4 relative group">
+        <img src="/img10.webp" alt="art" class="w-full h-auto" />
+        <div class="absolute bottom-0 left-0 p-6 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-lg font-manrope font-light">
+          Flora Yukhnovich, Courtesy the artist and Victoria Miro, 2020
+        </div>
       </div>
     </section>
 
@@ -391,11 +410,7 @@ import "../styles/tailwind.css";
     transform: translate(-50%, -50%);
     transition: transform 0.5s ease;
   }
-  /* .animate-scroll {
-    display: flex;
-    flex-direction: column;
-    animation: scroll 20s linear infinite;
-  } */
+
 
   .animate-scroll{
     display: flex;
@@ -403,8 +418,7 @@ import "../styles/tailwind.css";
     animation: scroll 20s infinite linear;
   }
 
-
-  @keyframes scroll {
+  @keyframes scroll{
   0% {
     transform: translateY(110%); /* Start completely below the container */
   }
@@ -420,6 +434,6 @@ import "../styles/tailwind.css";
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    transition: filter 2s ease; /* Smooth blur transition */
+    transition: filter 1s ease;
   }
 </style>
