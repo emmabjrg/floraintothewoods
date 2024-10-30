@@ -36,14 +36,19 @@ import "../styles/tailwind.css";
       18 Sep. 24 – 19 Jan. 25
     </h3>
 
-    <section
-      id="theartist"
-      class="flex h-screen flex-shrink-0 w-auto justify-center items-end mx-32 -mt-16"
-    >
-      <img src="/img1.webp" alt="art" class="h-4/6 pr-5"/>
 
-      <div class="">
-        <p class="max-w-prose">
+<section
+  id="theartist"
+  class="flex h-screen flex-shrink-0 w-auto justify-center items-end mx-32 -mt-16 relative"
+>
+  <div class="relative group">
+    <img src="/img1.webp" alt="art" class="h-4/6 pr-5" />
+    <div class="absolute left-0 bottom-0 p-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-lg font-manrope font-light">
+      Flora Yukhnovich, If All the World Were Jell-O, 2019
+    </div>
+  </div>
+  <div>
+    <p class="max-w-prose font-manrope">
       Flora Yukhnovich (b. 1990) is a British artist celebrated for her
       distinctive fusion of figuration and abstraction, with Rococo as a
       central influence. After transitioning from a background in graphic
@@ -52,9 +57,10 @@ import "../styles/tailwind.css";
       blending elements of high and low culture. Yukhnovich’s paintings are
       known for their sensuous and fluid compositions, where she
       reinterprets historical artistic styles through a contemporary lens.
-        </p>
-      </div>
-    </section>
+    </p>
+  </div>
+</section>
+
 
     <section
       id="theartwork"
@@ -76,7 +82,7 @@ import "../styles/tailwind.css";
     </section>
 
 
-
+    
     <section class="flex-shrink-0 items-center flex justify-center w-1/2">
       <div class="w-full pl-10 relative group">
         <img src="/img2.webp" alt="kunst" class="w-full h-auto" />
@@ -87,7 +93,7 @@ import "../styles/tailwind.css";
     </section>
     
 
-
+  
 
     <section class="flex-shrink-0 flex flex-col justify-between items-center h-screen bg-white">
       <div class="-mt-16"> 
@@ -170,7 +176,7 @@ import "../styles/tailwind.css";
         </div>
       </div>
     
-      <!-- Tredje billede med "hover tekst 7" -->
+
       <div class="p-4 w-max relative group">
         <img src="/img7.webp" alt="kunst" class="w-full h-auto" />
         <div class="absolute bottom-0 left-0 p-5 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-lg font-manrope font-light">
@@ -179,30 +185,28 @@ import "../styles/tailwind.css";
       </div>
     </section>
 
-
-    <section class="flex-shrink-0 flex items-center ml-20">
-      <div class="w-1/2 p-4 relative group">
-        <img
-          src="/img8.webp"
-          alt="kunst"
-          class="object-cover w-1/2 h-screen transform"
-        />
-        <div class="absolute bottom-0 left-0 p-6 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 font-manrope font-light">
-          Flora Yukhnovich, Minuet , 2020
-        </div>
+    <!-- Snyde kasse under bare for at lave noget white space -->
+    <section>
+      <div class="w-80">
       </div>
-      <div class="p-4 flex flex-col h-screen w-screen">
-        <h1 class="font-manrope text-sm">Minuet</h1>
-        <p>
+    </section>
+
+
+    <section class="flex h-screen flex-shrink-0 w-5/6 justify-center items-end relative">
+      <div class="relative group">
+        <img src="/img8.webp" alt="art" class="w-full h-auto" />
+      <div class="absolute left-0 bottom-0 p-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-lg font-manrope font-light">
+      Flora Yukhnovich, Minuet, 2020
+      </div>
+      </div>
+      <div>
+        <p class="max-w-prose font-manrope pl-5">
           The work Minuet is based on a painting by the Italian Rococo painter
           Giovanni Domenico Tiepolo. The painting, which hangs in the Louvre in
           Paris, depicts a dancing couple surrounded by masked spectators. The
           title, Minuet, refers specifically to a special, elegant dance for
           couples that dominated the aristocratic ballrooms of Europe from ca.
-          1650–1750.
-        </p>
-        <p class="pt-2">
-          In the work, Yukhnovich has also incorporated figures from the French
+          1650–1750. <br> In the work, Yukhnovich has also incorporated figures from the French
           Rococo painter Antoine Watteau’s depictions of commedia dell’arte.
           Commedia dell’arte is an Italian theatre form that originated in the
           16th century and is characterised by improvisation, comedic characters
@@ -212,46 +216,7 @@ import "../styles/tailwind.css";
     </section>
 
 
-    <section class="flex-shrink-0 flex items-center ml-20">
-      <div class="w-1/2 p-0 relative group"> <!-- Ændret padding fra p-4 til p-0 -->
-        <img
-          src="/img8.webp"
-          alt="kunst"
-          class="object-cover w-1/2 h-screen transform"
-        />
-        <div class="absolute bottom-0 left-0 p-6 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 font-manrope font-light">
-          Flora Yukhnovich, Minuet , 2020
-        </div>
-      </div>
-      <div class="p-0 flex flex-col h-screen w-screen"> <!-- Ændret padding fra p-4 til p-0 -->
-        <h1 class="font-manrope text-sm">Minuet</h1>
-        <p class="mt-0 mb-0"> <!-- Sætter margin til 0 for helt tæt på billedet -->
-          The work Minuet is based on a painting by the Italian Rococo painter
-          Giovanni Domenico Tiepolo. The painting, which hangs in the Louvre in
-          Paris, depicts a dancing couple surrounded by masked spectators. The
-          title, Minuet, refers specifically to a special, elegant dance for
-          couples that dominated the aristocratic ballrooms of Europe from ca.
-          1650–1750.
-        </p>
-        <p class="mt-0 mb-0"> <!-- Sætter margin til 0 for helt tæt på -->
-          In the work, Yukhnovich has also incorporated figures from the French
-          Rococo painter Antoine Watteau’s depictions of commedia dell’arte.
-          Commedia dell’arte is an Italian theatre form that originated in the
-          16th century and is characterised by improvisation, comedic characters
-          and masked figures such as Harlequin, Pierrot and Columbine.
-        </p>
-      </div>
-    </section>
 
-
-    <!-- <section class="flex-shrink-0 w-screen h-screen flex items-center">
-      <div class="w-1/2 p-4">
-        <img src="/img9.webp" alt="kunst" class="w-full h-auto" />
-      </div>
-      <div class="w-1/2 p-4">
-        <img src="/img10.webp" alt="kunst her" class="w-full h-auto" />
-      </div>
-    </section> -->
 
     <section class="flex-shrink-0 w-screen h-screen flex items-center">
       <div class="w-1/3 p-4 relative group">
@@ -263,7 +228,8 @@ import "../styles/tailwind.css";
         </div>
       </div>
     
-      <!-- Andet billede med "test123" på hover -->
+
+      
       <div class="w-1/3 p-4 relative group">
         <img src="/img10.webp" alt="art" class="w-full h-auto" />
         <div
