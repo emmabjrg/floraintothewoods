@@ -37,31 +37,31 @@ import "../styles/tailwind.css";
       18 Sep. 24 – 19 Jan. 25
     </h3>
 
-    <section
-      id="theartist"
-      class="flex h-screen flex-shrink-0 w-auto justify-center items-end mx-32 -mt-16 relative fade-in"
-    >
-      <div class="relative group">
-        <img src="/img1.webp" alt="art" class="h-4/6 pr-5" />
-        <div
-          class="absolute left-0 bottom-0 p-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-lg font-manrope font-light"
-        >
-          Flora Yukhnovich, If All the World Were Jell-O, 2019
-        </div>
-      </div>
-      <div>
-        <p class="max-w-prose font-manrope text-[18px] fade-in">
-          Flora Yukhnovich (b. 1990) is a British artist celebrated for her
-          distinctive fusion of figuration and abstraction, with Rococo as a
-          central influence. After transitioning from a background in graphic
-          design to painting, she completed an MA at City & Guilds of London Art
-          School. Her work explores themes of femininity and materiality,
-          blending elements of high and low culture. Yukhnovich’s paintings are
-          known for their sensuous and fluid compositions, where she
-          reinterprets historical artistic styles through a contemporary lens.
-        </p>
-      </div>
-    </section>
+
+<section
+  id="theartist"
+  class="flex h-screen flex-shrink-0 w-auto justify-center items-end mx-32 -mt-16 relative"
+>
+  <div class="relative group">
+    <img src="/img1.webp" alt="art" class="h-4/6 pr-5" />
+    <div class="absolute left-0 bottom-0 p-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-lg font-manrope font-light">
+      Flora Yukhnovich, If All the World Were Jell-O, 2019
+    </div>
+  </div>
+  <div>
+    <p class="max-w-prose font-manrope text-[18px] fade-in">
+      Flora Yukhnovich (b. 1990) is a British artist celebrated for her
+      distinctive fusion of figuration and abstraction, with Rococo as a
+      central influence. After transitioning from a background in graphic
+      design to painting, she completed an MA at City & Guilds of London Art
+      School. Her work explores themes of femininity and materiality,
+      blending elements of high and low culture. Yukhnovich’s paintings are
+      known for their sensuous and fluid compositions, where she
+      reinterprets historical artistic styles through a contemporary lens.
+    </p>
+  </div>
+</section>
+
 
     <section
       id="theartwork"
@@ -454,6 +454,11 @@ import "../styles/tailwind.css";
     flex-direction: column;
     animation: scroll 20s infinite linear;
   }
+
+  .slide-left {
+	-webkit-animation: slide-left 5s cubic-bezier(0.250, 0.460, 0.     450, 0.940) both;
+	        animation: slide-left 5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
 
   @keyframes scroll {
     0% {
