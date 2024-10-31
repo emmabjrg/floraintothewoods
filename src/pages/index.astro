@@ -40,7 +40,7 @@ import "../styles/tailwind.css";
 
 <section
   id="theartist"
-  class="flex h-screen flex-shrink-0 w-auto justify-center items-end -mt-16 relative z-20"
+  class="flex h-screen flex-shrink-0 w-auto justify-center items-end mx-32 -mt-16 relative"
 >
   <div class="relative group">
     <img src="/img1.webp" alt="art" class="h-4/6 pr-5" />
@@ -313,6 +313,13 @@ import "../styles/tailwind.css";
     />
 
     <section
+      class="flex-shrink-0 h-screen flex justify-center items-center pr-56 fade-in"
+    >
+      <Nyhedsbrev />
+      <p></p>
+    </section>
+
+    <section
       id="review"
       class="flex-shrink-0 w-full h-screen flex justify-center items-center m-0"
     >
@@ -362,13 +369,11 @@ import "../styles/tailwind.css";
       <p></p>
     </section>
 
-
-
     <section
       id="previous"
       class="flex-shrink-0 h-screen flex justify-center items-center mt-14 items-center fade-in"
     >
-      <div class="flex justify-center items-end pb-24 h-full p-4">
+      <div class="flex justify-center items-end pb-20 h-full p-4">
         <p class="[writing-mode:vertical-lr] font-manrope text-8xl font-light">
           Previous
         </p>
@@ -453,13 +458,13 @@ import "../styles/tailwind.css";
   .animate-scroll {
     display: flex;
     flex-direction: column;
-    animation: scroll 20s infinite linear;
+    animation: scroll 25s infinite linear;
   }
 
   .slide-left {
-	-webkit-animation: slide-left 5s cubic-bezier(0.250, 0.460, 0.     450, 0.940) both;
-	        animation: slide-left 5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-}
+    -webkit-animation: slide-left 5s cubic-bezier(0.25, 0.46, 0 450, 0.94) both;
+    animation: slide-left 5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  }
 
   @keyframes scroll {
     0% {
