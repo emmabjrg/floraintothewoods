@@ -1,4 +1,4 @@
-import inView from './in-view';
+import inView from 'in-view';
 
 document.addEventListener("DOMContentLoaded", function () {
     inView('.fade-in').on('enter', el => {
