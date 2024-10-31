@@ -4,6 +4,7 @@ import Udstillinger2 from "../components/Udstillinger2.astro";
 import Anmeldelser from "../components/Anmeldelser.astro";
 import Nyhedsbrev from "../components/Nyhedsbrev.astro";
 import "../styles/tailwind.css";
+import inView from "in-view";
 ---
 
 <!-------------------------- MAINLAYOUT HER ---------------------->
@@ -187,7 +188,10 @@ import "../styles/tailwind.css";
         </div>
       </div>
     </div>
-    <img src="/quotemark.svg" alt="" class="h-20 -mx-6 py-4 rotate-[-90deg] self-start"
+    <img
+      src="/quotemark.svg"
+      alt=""
+      class="h-20 -mx-6 py-4 rotate-[-90deg] self-start"
     />
 
     <section class="flex-shrink-0 w-screen h-screen flex items-center">
@@ -348,7 +352,8 @@ import "../styles/tailwind.css";
         <Anmeldelser
           anmelder="Kulturkupéen"
           stjerner="★★★★☆"
-          omtale="(...) Til gengæld er der fornemmelse af kvinder i alle positurer og gøremål, selv om det hele synes lidt udvisket i forhold til forbillederne: Boucher, Fragonard eller Watteau. Det interessante er, at Flora Yukhnovich er så god en kolorist, og malerierne har en kraftig appeal til beskueren, uanset om man kan hitte alskens spor, er feminist eller kommer op at køre over farver og lange penselstrøg."/>
+          omtale="(...) Til gengæld er der fornemmelse af kvinder i alle positurer og gøremål, selv om det hele synes lidt udvisket i forhold til forbillederne: Boucher, Fragonard eller Watteau. Det interessante er, at Flora Yukhnovich er så god en kolorist, og malerierne har en kraftig appeal til beskueren, uanset om man kan hitte alskens spor, er feminist eller kommer op at køre over farver og lange penselstrøg."
+        />
         <Anmeldelser
           anmelder="Villabyerne"
           stjerner="★★★★★"
