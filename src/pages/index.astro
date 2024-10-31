@@ -1,10 +1,8 @@
 ---
-import Udstillinger from "../components/Udstillinger.astro";
 import MainLayout from "../layouts/MainLayout.astro";
 import Udstillinger2 from "../components/Udstillinger2.astro";
 import Anmeldelser from "../components/Anmeldelser.astro";
 import Nyhedsbrev from "../components/Nyhedsbrev.astro";
-
 import "../styles/tailwind.css";
 ---
 
@@ -14,6 +12,7 @@ import "../styles/tailwind.css";
     href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
     rel="stylesheet"
   />
+
   <div class="custom-cursor"></div>
   <div
     id="scroll-container"
@@ -32,42 +31,44 @@ import "../styles/tailwind.css";
         Into the Woods
       </h2>
     </div>
-    <h3 class="font-manrope whitespace-nowrap text-2xl text-accent mt-20 ml-32">
+    <h3
+      class="font-manrope whitespace-nowrap text-2xl text-accent mt-20 ml-32 fade-in"
+    >
       18 Sep. 24 – 19 Jan. 25
     </h3>
 
-
-<section
-  id="theartist"
-  class="flex h-screen flex-shrink-0 w-auto justify-center items-end mx-32 -mt-16 relative"
->
-  <div class="relative group">
-    <img src="/img1.webp" alt="art" class="h-4/6 pr-5" />
-    <div class="absolute left-0 bottom-0 p-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-lg font-manrope font-light">
-      Flora Yukhnovich, If All the World Were Jell-O, 2019
-    </div>
-  </div>
-  <div>
-    <p class="max-w-prose font-manrope text-[18px] fade-in">
-      Flora Yukhnovich (b. 1990) is a British artist celebrated for her
-      distinctive fusion of figuration and abstraction, with Rococo as a
-      central influence. After transitioning from a background in graphic
-      design to painting, she completed an MA at City & Guilds of London Art
-      School. Her work explores themes of femininity and materiality,
-      blending elements of high and low culture. Yukhnovich’s paintings are
-      known for their sensuous and fluid compositions, where she
-      reinterprets historical artistic styles through a contemporary lens.
-    </p>
-  </div>
-</section>
-
+    <section
+      id="theartist"
+      class="flex h-screen flex-shrink-0 w-auto justify-center items-end mx-32 -mt-16 relative fade-in"
+    >
+      <div class="relative group">
+        <img src="/img1.webp" alt="art" class="h-4/6 pr-5" />
+        <div
+          class="absolute left-0 bottom-0 p-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-lg font-manrope font-light"
+        >
+          Flora Yukhnovich, If All the World Were Jell-O, 2019
+        </div>
+      </div>
+      <div>
+        <p class="max-w-prose font-manrope text-[18px] fade-in">
+          Flora Yukhnovich (b. 1990) is a British artist celebrated for her
+          distinctive fusion of figuration and abstraction, with Rococo as a
+          central influence. After transitioning from a background in graphic
+          design to painting, she completed an MA at City & Guilds of London Art
+          School. Her work explores themes of femininity and materiality,
+          blending elements of high and low culture. Yukhnovich’s paintings are
+          known for their sensuous and fluid compositions, where she
+          reinterprets historical artistic styles through a contemporary lens.
+        </p>
+      </div>
+    </section>
 
     <section
       id="theartwork"
       class="flex-shrink-0 h-screen flex justify-center items-center m-0"
     >
-      <img src="/blomst1.webp" alt="" class="h-screen self-end" />
-      <p class="font-manrope text-[30px] p-10 w-[900px]">
+      <img src="/blomst1.webp" alt="" class="h-screen self-end fade-in" />
+      <p class="font-manrope text-[30px] p-10 w-[900px] fade-in">
         With Into the Woods, Ordrupgaard proudly presents Flora Yukhnovich in
         her first museum exhibition outside the UK.<br /><br /> Known for her rising
         prominence in the art world, Yukhnovich brings together Rococo-inspired aesthetics
@@ -82,7 +83,7 @@ import "../styles/tailwind.css";
     </section>
 
     <section class="flex-shrink-0 items-center flex justify-center w-1/2">
-      <div class="w-full pl-10 relative group">
+      <div class="w-full pl-10 relative group fade-in">
         <img src="/img2.webp" alt="kunst" class="w-full h-auto" />
         <div
           class="absolute bottom-0 left-0 pl-12 pb-2 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-lg font-manrope font-light"
@@ -92,11 +93,13 @@ import "../styles/tailwind.css";
       </div>
     </section>
 
-    <section class="flex-shrink-0 flex flex-col justify-between items-center h-screen bg-white">
-      <div class="-mt-16"> 
-        <img src="/blomst3.png" alt="blad" class="w-auto h-80" />
+    <section
+      class="flex-shrink-0 flex flex-col justify-between items-center h-screen bg-white"
+    >
+      <div class="-mt-16">
+        <img src="/blomst3.png" alt="blad" class="w-auto h-80 fade-in" />
       </div>
-      <div class="flex flex-col gap-2 mt-4 ml-20">
+      <div class="flex flex-col gap-2 mt-4 ml-20 fade-in">
         <div>
           <img
             src="/quotemark.svg"
@@ -109,12 +112,14 @@ import "../styles/tailwind.css";
           painting process.
         </banner>
       </div>
-      <div class="ml-20 mr-50 mb-0 pr-96 mr-96">
+      <div class="ml-20 mr-50 mb-0 pr-96 mr-96 fade-in">
         <img src="/blomst2.png" alt="blomst" class="w-5/6 h-auto" />
       </div>
     </section>
 
-    <section class="flex-shrink-0 h-screen flex flex-col items-center justify-center gap-0">
+    <section
+      class="flex-shrink-0 h-screen flex flex-col items-center justify-center gap-0 fade-in"
+    >
       <div class="relative group">
         <img
           src="/img4.webp"
@@ -144,7 +149,7 @@ import "../styles/tailwind.css";
 
     <section class="flex-shrink-0 w-[900px] h-screen flex items-center m-0">
       <div class="p-4 flex flex-col justify-center h-screen">
-        <p class="w-[650px] font-manrope text-[24px]">
+        <p class="w-[650px] font-manrope text-[24px] fade-in">
           Several of Yukhnovich’s portrayals of women are accompanied by titles
           that refer to delicious desserts. She thereby creates a slightly
           ironic distance to the erotic objectification of women which can be
@@ -161,7 +166,7 @@ import "../styles/tailwind.css";
       </div>
     </section>
 
-    <div class="flex justify-end items-center h-screen w-48 m-0">
+    <div class="flex justify-end items-center h-screen w-48 m-0 fade-in">
       <div class="overflow-hidden h-full relative">
         <div class="animate-scroll h-full">
           <p
@@ -175,9 +180,11 @@ import "../styles/tailwind.css";
     </div>
 
     <section class="flex-shrink-0 w-screen h-screen flex items-center">
-      <div class="pl-64 relative group">
+      <div class="pl-64 relative group fade-in">
         <img src="/img5.webp" alt="kunst" class="w-full h-auto" />
-        <div class="absolute bottom-0 left-0 p-5 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-lg font-manrope font-light">
+        <div
+          class="absolute bottom-0 left-0 p-5 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-lg font-manrope font-light"
+        >
           Flora Yukhnovich, Thicker Than Peanut Butter, 2020
         </div>
       </div>
@@ -189,10 +196,13 @@ import "../styles/tailwind.css";
           Flora Yukhnovich, Midsummer Night’s Dream, 2024
         </div>
       </div>
-    
 
-      <div class="p-4 w-max relative group">
-        <img src="/img7.webp" alt="kunst" class="w-full h-auto scale-150 ml-[35px] pl-[45px]" />
+      <div class="p-4 w-max relative group fade-in">
+        <img
+          src="/img7.webp"
+          alt="kunst"
+          class="w-full h-auto scale-150 ml-[35px] pl-[45px]"
+        />
         <div
           class="absolute bottom-0 left-0 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-lg font-manrope font-light pl-20"
         >
@@ -207,9 +217,10 @@ import "../styles/tailwind.css";
       <div class="w-40"></div>
     </section>
 
-
-    <section class="flex h-screen flex-shrink-0 w-5/6 justify-center items-center relative content-center">
-      <div class="flex flex-col md:flex-row items-center">
+    <section
+      class="flex h-screen flex-shrink-0 w-5/6 justify-center items-center relative content-center"
+    >
+      <div class="flex flex-col md:flex-row items-center fade-in">
         <div class="relative group">
           <img src="/img8.webp" alt="art" class="w-full h-auto" />
           <div
@@ -219,9 +230,20 @@ import "../styles/tailwind.css";
           </div>
         </div>
         <div class="mt-4 md:mt-0 md:ml-4">
-          <p class="max-w-prose font-manrope text-center md:text-left text-[18px]">
-            The work Minuet is based on a painting by the Italian Rococo painter Giovanni Domenico Tiepolo. The painting, which hangs in the Louvre in Paris, depicts a dancing couple surrounded by masked spectators. The title, Minuet, refers specifically to a special, elegant dance for couples that dominated the aristocratic ballrooms of Europe from ca. 1650–1750. <br />
-            In the work, Yukhnovich has also incorporated figures from the French Rococo painter Antoine Watteau’s depictions of commedia dell’arte. Commedia dell’arte is an Italian theatre form that originated in the 16th century and is characterised by improvisation, comedic characters and masked figures such as Harlequin, Pierrot and Columbine.
+          <p
+            class="max-w-prose font-manrope text-center md:text-left text-[18px] fade-in"
+          >
+            The work Minuet is based on a painting by the Italian Rococo painter
+            Giovanni Domenico Tiepolo. The painting, which hangs in the Louvre
+            in Paris, depicts a dancing couple surrounded by masked spectators.
+            The title, Minuet, refers specifically to a special, elegant dance
+            for couples that dominated the aristocratic ballrooms of Europe from
+            ca. 1650–1750. <br />
+            In the work, Yukhnovich has also incorporated figures from the French
+            Rococo painter Antoine Watteau’s depictions of commedia dell’arte. Commedia
+            dell’arte is an Italian theatre form that originated in the 16th century
+            and is characterised by improvisation, comedic characters and masked
+            figures such as Harlequin, Pierrot and Columbine.
           </p>
         </div>
       </div>
@@ -232,12 +254,17 @@ import "../styles/tailwind.css";
       <div class="w-60"></div>
     </section>
 
-
-    <section class="flex-shrink-0 w-screen h-screen flex items-center justify-center">
+    <section
+      class="flex-shrink-0 w-screen h-screen flex items-center justify-center"
+    >
       <div class="flex w-2/3">
         <div class="w-1/2 p-4 relative group flex items-center">
-          <div class="w-full h-full relative aspect-w-1 aspect-h-1">
-            <img src="/img9.webp" alt="art" class="w-full h-full object-cover" />
+          <div class="w-full h-full relative aspect-w-1 aspect-h-1 fade-in">
+            <img
+              src="/img9.webp"
+              alt="art"
+              class="w-full h-full object-cover"
+            />
             <div
               class="absolute bottom-0 left-0 p-6 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-lg font-manrope font-light"
             >
@@ -246,8 +273,12 @@ import "../styles/tailwind.css";
           </div>
         </div>
         <div class="w-1/2 p-4 relative group flex items-center">
-          <div class="w-full h-full relative aspect-w-1 aspect-h-1">
-            <img src="/img10.webp" alt="art" class="w-full h-full object-cover" />
+          <div class="w-full h-full relative aspect-w-1 aspect-h-1 fade-in">
+            <img
+              src="/img10.webp"
+              alt="art"
+              class="w-full h-full object-cover"
+            />
             <div
               class="absolute bottom-0 left-0 p-6 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-lg font-manrope font-light"
             >
@@ -256,38 +287,41 @@ import "../styles/tailwind.css";
           </div>
         </div>
       </div>
-    
-      <div class="w-1/3 p-9 flex items-center">
+
+      <div class="w-1/3 p-9 flex items-center fade-in">
         <p class="font-manrope text-[18px]">
           As you reach the end of this journey through Into the Woods, Flora
           Yukhnovich's captivating exploration of art history and contemporary
-          culture, we invite you to experience these works in person. Step
-          into the enchanted forest she has created, where the boundaries
-          between fantasy and reality, past and present, dissolve. Whether
-          you're drawn to the elegance of Rococo or intrigued by the blend of
-          mythological and modern icons, Yukhnovich’s art offers a sensory
-          experience that is both thought-provoking and visually stunning.
-          Visit Ordrupgaard to immerse yourself in this unique exhibition and
-          see how Yukhnovich reimagines the world of art for a new generation.
-          Click here for further information about the exhibition including
-          prices and opening hours.
+          culture, we invite you to experience these works in person. Step into
+          the enchanted forest she has created, where the boundaries between
+          fantasy and reality, past and present, dissolve. Whether you're drawn
+          to the elegance of Rococo or intrigued by the blend of mythological
+          and modern icons, Yukhnovich’s art offers a sensory experience that is
+          both thought-provoking and visually stunning. Visit Ordrupgaard to
+          immerse yourself in this unique exhibition and see how Yukhnovich
+          reimagines the world of art for a new generation. Click here for
+          further information about the exhibition including prices and opening
+          hours.
         </p>
       </div>
     </section>
-    
-  
-    <img src="/Blomst4.png" alt="blomst" class="w-screen h-auto flex flex-col justify-center items-center m-0"/>
+
+    <img
+      src="/Blomst4.png"
+      alt="blomst"
+      class="w-screen h-auto flex flex-col justify-center items-center m-0 fade-in"
+    />
 
     <section
       id="review"
       class="flex-shrink-0 w-full h-screen flex justify-center items-center m-0"
     >
-      <div class="flex justify-center items-end pb-14 h-full p-4">
+      <div class="flex justify-center items-end pb-14 h-full p-4 fade-in">
         <p class="[writing-mode:vertical-lr] font-manrope text-8xl font-light">
           Reviews
         </p>
       </div>
-      <div class="grid grid-cols-2 w-[60vw] justify-start gap-6">
+      <div class="grid grid-cols-2 w-[60vw] justify-start gap-6 fade-in">
         <Anmeldelser
           anmelder="Kristeligt Dagblad"
           stjerner="★★★★★"
@@ -322,7 +356,7 @@ import "../styles/tailwind.css";
     </section>
 
     <section
-      class="flex-shrink-0 h-screen flex justify-center items-center pr-56"
+      class="flex-shrink-0 h-screen flex justify-center items-center pr-56 fade-in"
     >
       <Nyhedsbrev />
       <p></p>
@@ -330,7 +364,7 @@ import "../styles/tailwind.css";
 
     <section
       id="previous"
-      class="flex-shrink-0 h-screen flex justify-center items-center mt-14"
+      class="flex-shrink-0 h-screen flex justify-center items-center mt-14 fade-in"
     >
       <div class="flex justify-center items-end pb-24 h-full p-4">
         <p class="[writing-mode:vertical-lr] font-manrope text-8xl font-light">
@@ -437,5 +471,21 @@ import "../styles/tailwind.css";
     left: 50%;
     transform: translate(-50%, -50%);
     transition: filter 1s ease;
+  }
+
+  /*--------------- face-in effekten ----------------*/
+  /* Initial hidden state */
+  /* Initial hidden state */
+  .fade-in {
+    filter: opacity(0) !important;
+    transform: translateX(40px);
+    transition:
+      filter 2s ease,
+      transform 4s ease;
+  }
+
+  .in-view {
+    filter: opacity(1) !important;
+    transform: translateX(0);
   }
 </style>
