@@ -39,7 +39,7 @@ import "../styles/tailwind.css";
 
 <section
   id="theartist"
-  class="flex h-screen flex-shrink-0 w-auto justify-center items-end mx-32 -mt-16 relative"
+  class="flex h-screen flex-shrink-0 w-auto justify-center items-end mx-32 -mt-16 relative slide-left"
 >
   <div class="relative group">
     <img src="/img1.webp" alt="art" class="h-4/6 pr-5" />
@@ -420,6 +420,11 @@ import "../styles/tailwind.css";
     flex-direction: column;
     animation: scroll 20s infinite linear;
   }
+
+  .slide-left {
+	-webkit-animation: slide-left 5s cubic-bezier(0.250, 0.460, 0.     450, 0.940) both;
+	        animation: slide-left 5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
 
   @keyframes scroll {
     0% {
