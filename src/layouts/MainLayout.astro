@@ -16,6 +16,10 @@ const { title } = Astro.props;
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;700&family=Cormorant:ital,wght@0,300;1,300&display=swap"
       rel="stylesheet"
     />
+    <script
+      src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
+      defer></script>
+
     <title>{Astro.props.title}</title>
     <style>
       @keyframes load-up {
@@ -31,7 +35,6 @@ const { title } = Astro.props;
     </style>
   </head>
 
-  <!--
   <body class="overflow-x-hidden">
     <div
       id="preloader"
@@ -44,21 +47,20 @@ const { title } = Astro.props;
         class="w-32 h-32 load-animation"
       />
     </div>
-    >-->
 
-  <header>
-    <Header />
-  </header>
+    <header>
+      <Header />
+    </header>
 
-  <main class="">
-    <slot />
-  </main>
+    <main class="">
+      <slot />
+    </main>
 
-  <footer>
-    <Footer />
-  </footer>
+    <footer>
+      <Footer />
+    </footer>
 
-  <!-- <script>
+    <!-- <script>
       const password = prompt("Enter the password to access this site:");
       if (password !== "1234") {
         alert("Incorrect password!");
@@ -66,6 +68,7 @@ const { title } = Astro.props;
       }
     </script>-->
 
-  <script src="/src/layouts/preloader.js"></script>
-
+    <script src="/src/layouts/preloader.js"></script>
+    <script type="module" src="/src/layouts/fade-in.js"></script>
+  </body>
 </html>
