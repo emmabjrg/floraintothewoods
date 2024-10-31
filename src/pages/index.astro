@@ -37,31 +37,31 @@ import "../styles/tailwind.css";
       18 Sep. 24 – 19 Jan. 25
     </h3>
 
-
-<section
-  id="theartist"
-  class="flex h-screen flex-shrink-0 w-auto justify-center items-end -mt-16 relative"
->
-  <div class="relative group">
-    <img src="/img1.webp" alt="art" class="h-4/6 pr-5" />
-    <div class="absolute left-0 bottom-0 p-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-lg font-manrope font-light">
-      Flora Yukhnovich, If All the World Were Jell-O, 2019
-    </div>
-  </div>
-  <div>
-    <p class="max-w-prose font-manrope text-[18px] fade-in">
-      Flora Yukhnovich (b. 1990) is a British artist celebrated for her
-      distinctive fusion of figuration and abstraction, with Rococo as a
-      central influence. After transitioning from a background in graphic
-      design to painting, she completed an MA at City & Guilds of London Art
-      School. Her work explores themes of femininity and materiality,
-      blending elements of high and low culture. Yukhnovich’s paintings are
-      known for their sensuous and fluid compositions, where she
-      reinterprets historical artistic styles through a contemporary lens.
-    </p>
-  </div>
-</section>
-
+    <section
+      id="theartist"
+      class="flex h-screen flex-shrink-0 w-auto justify-center items-end -mt-16 relative"
+    >
+      <div class="relative group">
+        <img src="/img1.webp" alt="art" class="h-4/6 pr-5" />
+        <div
+          class="absolute left-0 bottom-0 p-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-lg font-manrope font-light"
+        >
+          Flora Yukhnovich, If All the World Were Jell-O, 2019
+        </div>
+      </div>
+      <div>
+        <p class="max-w-prose font-manrope text-[18px] fade-in">
+          Flora Yukhnovich (b. 1990) is a British artist celebrated for her
+          distinctive fusion of figuration and abstraction, with Rococo as a
+          central influence. After transitioning from a background in graphic
+          design to painting, she completed an MA at City & Guilds of London Art
+          School. Her work explores themes of femininity and materiality,
+          blending elements of high and low culture. Yukhnovich’s paintings are
+          known for their sensuous and fluid compositions, where she
+          reinterprets historical artistic styles through a contemporary lens.
+        </p>
+      </div>
+    </section>
 
     <section
       id="theartwork"
@@ -185,7 +185,7 @@ import "../styles/tailwind.css";
         <div
           class="absolute bottom-0 left-0 pl-72 p-5 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-lg font-manrope font-light"
         >
-          Flora Yukhnovich, <br> Thicker Than Peanut Butter, 2020
+          Flora Yukhnovich, <br /> Thicker Than Peanut Butter, 2020
         </div>
       </div>
       <div class="p-4 relative group ml-5">
@@ -362,8 +362,8 @@ import "../styles/tailwind.css";
       </div>
     </section>
 
-     <!-- Snyde kasse under bare for at lave noget white space -->
-     <section>
+    <!-- Snyde kasse under bare for at lave noget white space -->
+    <section>
       <div class="w-40"></div>
     </section>
 
@@ -371,7 +371,7 @@ import "../styles/tailwind.css";
       id="previous"
       class="flex-shrink-0 h-screen flex justify-center items-center mt-14"
     >
-      <div class="flex justify-center items-end pb-20 h-full p-4">
+      <div class="flex justify-center items-end pb-28 h-full p-4">
         <p class="[writing-mode:vertical-lr] font-manrope text-8xl font-light">
           Previous
         </p>
@@ -380,119 +380,122 @@ import "../styles/tailwind.css";
       <p></p>
     </section>
 
-  <script>
-    //----------------------scroll-hori--------------------------//
-    const scrollContainer = document.getElementById("scroll-container");
+    <script>
+      //----------------------scroll-hori--------------------------//
+      const scrollContainer = document.getElementById("scroll-container");
 
-    window.addEventListener(
-      "wheel",
-      (event) => {
-        scrollContainer.scrollLeft += event.deltaY;
+      window.addEventListener(
+        "wheel",
+        (event) => {
+          scrollContainer.scrollLeft += event.deltaY;
 
-        event.preventDefault();
-      },
-      { passive: false }
-    );
-    //----------------------custom-mouse--------------------------//
+          event.preventDefault();
+        },
+        { passive: false }
+      );
+      //----------------------custom-mouse--------------------------//
 
-    const customCursor = document.querySelector(".custom-cursor");
+      const customCursor = document.querySelector(".custom-cursor");
 
-    let cursorX = 0,
-      cursorY = 0;
-    let mouseX = 0,
-      mouseY = 0;
+      let cursorX = 0,
+        cursorY = 0;
+      let mouseX = 0,
+        mouseY = 0;
 
-    document.addEventListener("mousemove", (e) => {
-      mouseX = e.pageX;
-      mouseY = e.pageY;
-    });
-
-    function animateCursor() {
-      cursorX += (mouseX - cursorX) * 0.1;
-      cursorY += (mouseY - cursorY) * 0.1;
-
-      customCursor.style.left = `${cursorX}px`;
-      customCursor.style.top = `${cursorY}px`;
-
-      requestAnimationFrame(animateCursor);
-    }
-    animateCursor();
-
-    //--------------------blur????--------------//
-    const fixedTitle = document.getElementById("fixed-title");
-    const blurThreshold = 1000;
-
-    document
-      .getElementById("scroll-container")
-      .addEventListener("scroll", () => {
-        if (
-          document.getElementById("scroll-container").scrollLeft > blurThreshold
-        ) {
-          fixedTitle.classList.add("blur");
-        } else {
-          fixedTitle.classList.remove("blur");
-        }
+      document.addEventListener("mousemove", (e) => {
+        mouseX = e.pageX;
+        mouseY = e.pageY;
       });
-  </script>
+
+      function animateCursor() {
+        cursorX += (mouseX - cursorX) * 0.1;
+        cursorY += (mouseY - cursorY) * 0.1;
+
+        customCursor.style.left = `${cursorX}px`;
+        customCursor.style.top = `${cursorY}px`;
+
+        requestAnimationFrame(animateCursor);
+      }
+      animateCursor();
+
+      //--------------------blur????--------------//
+      const fixedTitle = document.getElementById("fixed-title");
+      const blurThreshold = 1000;
+
+      document
+        .getElementById("scroll-container")
+        .addEventListener("scroll", () => {
+          if (
+            document.getElementById("scroll-container").scrollLeft >
+            blurThreshold
+          ) {
+            fixedTitle.classList.add("blur");
+          } else {
+            fixedTitle.classList.remove("blur");
+          }
+        });
+    </script>
+  </div>
+
+  <!-------------------------- STYLE ---------------------->
+  <style>
+    body {
+      cursor: none;
+    }
+
+    .custom-cursor {
+      position: absolute;
+      width: 60px;
+      height: 60px;
+      border: 1px solid #517587;
+      border-radius: 50%;
+      pointer-events: none;
+      transform: translate(-50%, -50%);
+      transition: transform 0.5s ease;
+    }
+
+    .animate-scroll {
+      display: flex;
+      flex-direction: column;
+      animation: scroll 25s infinite linear;
+    }
+
+    .slide-left {
+      -webkit-animation: slide-left 5s cubic-bezier(0.25, 0.46, 0 450, 0.94)
+        both;
+      animation: slide-left 5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    }
+
+    @keyframes scroll {
+      0% {
+        transform: translateY(110%); /* Start completely below the container */
+      }
+      100% {
+        transform: translateY(-420%); /* Exit above the container */
+      }
+    }
+
+    /*----------blur???-----------*/
+    #fixed-title {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      transition: filter 1s ease;
+    }
+
+    /*--------------- face-in effekten!!!!!!!! ----------------*/
+    .fade-in {
+      filter: opacity(0) !important;
+      transform: translateX(70px);
+      transition:
+        filter 2s ease,
+        transform 2s ease;
+    }
+
+    .in-view {
+      filter: opacity(1) !important;
+      transform: translateX(0);
+    }
+  </style>
 </MainLayout>
-
-<!-------------------------- STYLE ---------------------->
-<style>
-  body {
-    cursor: none;
-  }
-
-  .custom-cursor {
-    position: absolute;
-    width: 60px;
-    height: 60px;
-    border: 1px solid #517587;
-    border-radius: 50%;
-    pointer-events: none;
-    transform: translate(-50%, -50%);
-    transition: transform 0.5s ease;
-  }
-
-  .animate-scroll {
-    display: flex;
-    flex-direction: column;
-    animation: scroll 25s infinite linear;
-  }
-
-  .slide-left {
-    -webkit-animation: slide-left 5s cubic-bezier(0.25, 0.46, 0 450, 0.94) both;
-    animation: slide-left 5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  }
-
-  @keyframes scroll {
-    0% {
-      transform: translateY(110%); /* Start completely below the container */
-    }
-    100% {
-      transform: translateY(-420%); /* Exit above the container */
-    }
-  }
-
-  /*----------blur???-----------*/
-  #fixed-title {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    transition: filter 1s ease;
-  }
-
-  /*--------------- face-in effekten!!!!!!!! ----------------*/
-  .fade-in {
-    filter: opacity(0) !important;
-    transform: translateX(70px);
-    transition:
-      filter 2s ease,
-      transform 2s ease;
-  }
-
-  .in-view {
-    filter: opacity(1) !important;
-    transform: translateX(0);
-  }
-</style>
