@@ -31,6 +31,7 @@ const { title } = Astro.props;
     </style>
   </head>
 
+  <!--
   <body class="overflow-x-hidden">
     <div
       id="preloader"
@@ -43,20 +44,21 @@ const { title } = Astro.props;
         class="w-32 h-32 load-animation"
       />
     </div>
+    >-->
 
-    <header>
-      <Header />
-    </header>
+  <header>
+    <Header />
+  </header>
 
-    <main class="">
-      <slot />
-    </main>
+  <main class="">
+    <slot />
+  </main>
 
-    <footer>
-      <Footer />
-    </footer>
+  <footer>
+    <Footer />
+  </footer>
 
-    <!-- <script>
+  <!-- <script>
       const password = prompt("Enter the password to access this site:");
       if (password !== "1234") {
         alert("Incorrect password!");
@@ -64,6 +66,6 @@ const { title } = Astro.props;
       }
     </script>-->
 
-    <script src="/src/layouts/preloader.js"></script>
-  </body>
+  <script src="/src/layouts/preloader.js"></script>
+
 </html>
