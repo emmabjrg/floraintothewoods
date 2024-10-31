@@ -13,10 +13,10 @@ import "../styles/tailwind.css";
     rel="stylesheet"
   />
 
-  <div class="custom-cursor"></div>
+  <div class="custom-cursor z-50"></div>
   <div
     id="scroll-container"
-    class="flex overflow-x-auto max-w-full h-screen w-full"
+    class="flex overflow-x-auto max-w-full h-screen w-full z-50"
   >
     <h1
       id="fixed-title"
@@ -40,7 +40,7 @@ import "../styles/tailwind.css";
 
 <section
   id="theartist"
-  class="flex h-screen flex-shrink-0 w-auto justify-center items-end mx-32 -mt-16 relative"
+  class="flex h-screen flex-shrink-0 w-auto justify-center items-end -mt-16 relative z-20"
 >
   <div class="relative group">
     <img src="/img1.webp" alt="art" class="h-4/6 pr-5" />
@@ -67,7 +67,7 @@ import "../styles/tailwind.css";
       id="theartwork"
       class="flex-shrink-0 h-screen flex justify-center items-center m-0"
     >
-      <img src="/blomst1.webp" alt="" class="h-screen self-end fade-in" />
+      <img src="/blomst1.webp" alt="" class="h-screen self-end" />
       <p class="font-manrope text-[30px] p-10 w-[900px] fade-in">
         With Into the Woods, Ordrupgaard proudly presents Flora Yukhnovich in
         her first museum exhibition outside the UK.<br /><br /> Known for her rising
@@ -97,9 +97,9 @@ import "../styles/tailwind.css";
       class="flex-shrink-0 flex flex-col justify-between items-center h-screen bg-white"
     >
       <div class="-mt-16">
-        <img src="/blomst3.png" alt="blad" class="w-auto h-80 fade-in" />
+        <img src="/blomst3.png" alt="blad" class="w-auto h-80" />
       </div>
-      <div class="flex flex-col gap-2 mt-4 ml-20 fade-in">
+      <div class="flex flex-col gap-2 mt-4 ml-20">
         <div>
           <img
             src="/quotemark.svg"
@@ -112,13 +112,13 @@ import "../styles/tailwind.css";
           painting process.
         </banner>
       </div>
-      <div class="ml-20 mr-50 mb-0 pr-96 mr-96 fade-in">
+      <div class="ml-20 mr-50 mb-0 pr-96 mr-96">
         <img src="/blomst2.png" alt="blomst" class="w-5/6 h-auto" />
       </div>
     </section>
 
     <section
-      class="flex-shrink-0 h-screen flex flex-col items-center justify-center gap-0 fade-in"
+      class="flex-shrink-0 h-screen flex flex-col items-center justify-center gap-0"
     >
       <div class="relative group">
         <img
@@ -180,12 +180,12 @@ import "../styles/tailwind.css";
     </div>
 
     <section class="flex-shrink-0 w-screen h-screen flex items-center">
-      <div class="pl-64 relative group fade-in">
+      <div class="pl-64 relative group">
         <img src="/img5.webp" alt="kunst" class="w-full h-auto" />
         <div
-          class="absolute bottom-0 left-0 p-5 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-lg font-manrope font-light"
+          class="absolute bottom-0 left-0 pl-72 p-5 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-lg font-manrope font-light"
         >
-          Flora Yukhnovich, Thicker Than Peanut Butter, 2020
+          Flora Yukhnovich, <br> Thicker Than Peanut Butter, 2020
         </div>
       </div>
       <div class="p-4 relative group ml-5">
@@ -197,7 +197,7 @@ import "../styles/tailwind.css";
         </div>
       </div>
 
-      <div class="p-4 w-max relative group fade-in">
+      <div class="p-4 w-max relative group">
         <img
           src="/img7.webp"
           alt="kunst"
@@ -309,7 +309,7 @@ import "../styles/tailwind.css";
     <img
       src="/Blomst4.png"
       alt="blomst"
-      class="w-screen h-auto flex flex-col justify-center items-center m-0 fade-in"
+      class="w-screen h-auto flex flex-col justify-center items-center m-0"
     />
 
     <section
@@ -362,9 +362,11 @@ import "../styles/tailwind.css";
       <p></p>
     </section>
 
+
+
     <section
       id="previous"
-      class="flex-shrink-0 h-screen flex justify-center items-center mt-14 fade-in"
+      class="flex-shrink-0 h-screen flex justify-center items-center mt-14 items-center fade-in"
     >
       <div class="flex justify-center items-end pb-24 h-full p-4">
         <p class="[writing-mode:vertical-lr] font-manrope text-8xl font-light">
@@ -374,7 +376,6 @@ import "../styles/tailwind.css";
       <Udstillinger2 />
       <p></p>
     </section>
-  </div>
 
   <script>
     //----------------------scroll-hori--------------------------//
@@ -484,7 +485,7 @@ import "../styles/tailwind.css";
     transform: translateX(70px);
     transition:
       filter 2s ease,
-      transform 4s ease;
+      transform 2s ease;
   }
 
   .in-view {
